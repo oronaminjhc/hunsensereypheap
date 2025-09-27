@@ -216,6 +216,10 @@ class LanguageManager {
             if (enBtn && kmBtn) {
                 enBtn.classList.toggle('active', language === 'en');
                 kmBtn.classList.toggle('active', language === 'km');
+                
+                // Update ARIA labels
+                enBtn.setAttribute('aria-label', language === 'en' ? 'English (Current)' : 'Switch to English');
+                kmBtn.setAttribute('aria-label', language === 'km' ? 'ភាសាខ្មែរ (បច្ចុប្បន្ន)' : 'Switch to Khmer');
             }
             
             // Update all translatable elements
