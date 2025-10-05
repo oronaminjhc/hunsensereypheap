@@ -38,9 +38,16 @@
                 <span data-en="📧 info@hssphighschool.edu.kh" data-km="📧 info@hssphighschool.edu.kh">📧 info@hssphighschool.edu.kh</span>
                 <span data-en="📍 Takhmao, Kandal Province" data-km="📍 ត្រពាំងព្រីង ខេត្តកណ្តាល">📍 Takhmao, Kandal Province</span>
             </div>
+            <div class="top-utils">
+                <div class="search-toggle">
+                    <button id="search-btn" aria-label="Search" title="Search">
+                        <span>🔍</span>
+                    </button>
+                </div>
             <div class="language-switch">
                 <button id="en-btn" class="active" data-en="English" data-km="English" aria-label="Switch to English">English</button>
                 <button id="km-btn" data-en="ភាសាខ្មែរ" data-km="ភាសាខ្មែរ" aria-label="Switch to Khmer">ភាសាខ្មែរ</button>
+                </div>
             </div>
         </div>
     </div>
@@ -58,20 +65,82 @@
                 </div>
             </div>
             <nav>
-                <ul>
-                    <li><a href="#about" data-en="About" data-km="អំពីយើង">About</a></li>
-                    <li><a href="#academics" data-en="Academics" data-km="ការសិក្សា">Academics</a></li>
-                    <li><a href="#admission" data-en="Admission" data-km="ការចុះឈ្មោះ">Admission</a></li>
-                    <li><a href="#student" data-en="Student Life" data-km="ជីវិតសិស្ស">Student Life</a></li>
-                    <li><a href="#news" data-en="News" data-km="ព័ត៌មាន">News</a></li>
+                <ul class="main-nav">
+                    <li><a href="#home" data-en="Home" data-km="ទំព័រដើម">Home</a></li>
+                    <li class="has-dropdown">
+                        <a href="#about" data-en="About" data-km="អំពីយើង">About</a>
+                        <ul class="dropdown">
+                            <li><a href="#about-welcome" data-en="Welcome from Principal" data-km="ស្វាគមន៍ពីអគ្គនាយក">Welcome from Principal</a></li>
+                            <li><a href="#about-mission" data-en="Mission & Vision" data-km="បេសកកម្ម និងទស្សនវិស័យ">Mission & Vision</a></li>
+                            <li><a href="#about-history" data-en="History" data-km="ប្រវត្តិ">History</a></li>
+                            <li><a href="#about-staff" data-en="Leadership & Staff" data-km="ភាពជាអ្នកដឹកនាំ និងបុគ្គលិក">Leadership & Staff</a></li>
+                            <li><a href="#about-facilities" data-en="Campus Facilities" data-km="គ្រឿងបរិក្ខារបរិវេណ">Campus Facilities</a></li>
+                            <li><a href="#about-achievements" data-en="Achievements & Awards" data-km="សមិទ្ធិផល និងពានរង្វាន់">Achievements & Awards</a></li>
+                        </ul>
+                    </li>
+                    <li class="has-dropdown">
+                        <a href="#academics" data-en="Academics" data-km="ការសិក្សា">Academics</a>
+                        <ul class="dropdown">
+                            <li><a href="#academics-curriculum" data-en="Curriculum" data-km="កម្មវិធីសិក្សា">Curriculum</a></li>
+                            <li><a href="#academics-departments" data-en="Departments" data-km="ផ្នែក">Departments</a></li>
+                            <li><a href="#academics-calendar" data-en="Academic Calendar" data-km="ប្រតិទិនសិក្សា">Academic Calendar</a></li>
+                            <li><a href="#academics-bac" data-en="National Exam (Bac II)" data-km="ការប្រឡងជាតិ (Bac II)">National Exam (Bac II)</a></li>
+                            <li><a href="#academics-guidance" data-en="University Guidance" data-km="ការណែនាំមហាវិទ្យាល័យ">University Guidance</a></li>
+                        </ul>
+                    </li>
+                    <li class="has-dropdown">
+                        <a href="#admissions" data-en="Admissions" data-km="ការចុះឈ្មោះ">Admissions</a>
+                        <ul class="dropdown">
+                            <li><a href="#admissions-process" data-en="Enrollment Process" data-km="ដំណើរការចុះឈ្មោះ">Enrollment Process</a></li>
+                            <li><a href="#admissions-documents" data-en="Required Documents" data-km="ឯកសារចាំបាច់">Required Documents</a></li>
+                            <li><a href="#admissions-zone" data-en="School Zone / Eligibility" data-km="តំបន់សាលា / សិទ្ធិ">School Zone / Eligibility</a></li>
+                            <li><a href="#admissions-faq" data-en="FAQ" data-km="សំណួរដែលសួរញឹកញាប់">FAQ</a></li>
+                            <li><a href="#admissions-visit" data-en="Plan a Visit" data-km="រៀបចំទស្សនកិច្ច">Plan a Visit</a></li>
+                        </ul>
+                    </li>
+                    <li class="has-dropdown">
+                        <a href="#student-life" data-en="Student Life" data-km="ជីវិតសិស្ស">Student Life</a>
+                        <ul class="dropdown">
+                            <li><a href="#student-clubs" data-en="Clubs & Activities" data-km="ក្លឹប និងសកម្មភាព">Clubs & Activities</a></li>
+                            <li><a href="#student-council" data-en="Student Council" data-km="ក្រុមប្រឹក្សាសិស្ស">Student Council</a></li>
+                            <li><a href="#student-rules" data-en="Code of Conduct & Rules" data-km="ក្រមសីលធម៌ និងច្បាប់">Code of Conduct & Rules</a></li>
+                            <li><a href="#student-events" data-en="Events & Traditions" data-km="ព្រឹត្តិការណ៍ និងប្រពៃណី">Events & Traditions</a></li>
+                            <li><a href="#student-handbook" data-en="Student Handbook" data-km="សៀវភៅណែនាំសិស្ស">Student Handbook</a></li>
+                        </ul>
+                    </li>
+                    <li class="has-dropdown">
+                        <a href="#news" data-en="News & Events" data-km="ព័ត៌មាន និងព្រឹត្តិការណ៍">News & Events</a>
+                        <ul class="dropdown">
+                            <li><a href="#news-announcements" data-en="Latest Announcements" data-km="ប្រកាសចុងក្រោយ">Latest Announcements</a></li>
+                            <li><a href="#news-calendar" data-en="Event Calendar" data-km="ប្រតិទិនព្រឹត្តិការណ៍">Event Calendar</a></li>
+                            <li><a href="#news-gallery" data-en="Photo & Video Gallery" data-km="វិចិត្រសាល និងវីដេអូ">Photo & Video Gallery</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#parents" data-en="Parents" data-km="ឪពុកម្តាយ">Parents</a></li>
+                    <li><a href="#alumni" data-en="Alumni" data-km="សិស្សចាស់">Alumni</a></li>
                     <li><a href="#contact" data-en="Contact" data-km="ទំនាក់ទំនង">Contact</a></li>
                 </ul>
             </nav>
         </div>
     </header>
     
-    <!-- Hero Section -->
-    <section class="hero" id="main-content">
+    <!-- Search Overlay -->
+    <div id="search-overlay" class="search-overlay" style="display: none;">
+        <div class="search-content">
+            <div class="search-header">
+                <h3 data-en="Search" data-km="ស្វែងរក">Search</h3>
+                <button id="search-close" aria-label="Close search">✕</button>
+            </div>
+            <div class="search-input-container">
+                <input type="text" id="search-input" placeholder="Search news, pages, and information..." aria-label="Search input">
+                <button id="search-submit" aria-label="Submit search">🔍</button>
+            </div>
+            <div id="search-results" class="search-results"></div>
+        </div>
+    </div>
+
+    <!-- Home Section -->
+    <section class="hero" id="home">
         <div class="hero-content">
             <div class="hero-text">
                 <h2 data-en="Learning today leading tomorrow" data-km="រៀនថ្ងៃនេះ ដឹកនាំថ្ងៃស្អែក">Learning today leading tomorrow</h2>
@@ -106,24 +175,151 @@
     <section class="quick-links">
         <div class="quick-links-content">
             <div class="quick-link">
-                <div class="quick-link-icon">📅</div>
-                <h3 data-en="Academic Calendar" data-km="ប្រតិទិនសិក្សា">Academic Calendar</h3>
-                <p data-en="2025 Academic Year Schedule" data-km="កាលវិភាគឆ្នាំសិក្សា ២០២៥">2025 Academic Year Schedule</p>
+                <div class="quick-link-icon">📝</div>
+                <h3 data-en="Admissions" data-km="ការចុះឈ្មោះ">Admissions</h3>
+                <p data-en="Apply for 2025-2026" data-km="ដាក់ពាក្យសម្រាប់ ២០២៥-២០២៦">Apply for 2025-2026</p>
             </div>
             <div class="quick-link">
-                <div class="quick-link-icon">📚</div>
-                <h3 data-en="Online Learning" data-km="ការសិក្សាអនឡាញ">Online Learning</h3>
-                <p data-en="Digital Learning Platform" data-km="វេទិកាសិក្សាឌីជីថល">Digital Learning Platform</p>
+                <div class="quick-link-icon">📅</div>
+                <h3 data-en="Calendar" data-km="ប្រតិទិន">Calendar</h3>
+                <p data-en="Academic Events & Dates" data-km="ព្រឹត្តិការណ៍ និងកាលបរិច្ឆេទសិក្សា">Academic Events & Dates</p>
             </div>
             <div class="quick-link">
                 <div class="quick-link-icon">👨‍👩‍👧</div>
-                <h3 data-en="Parent Portal" data-km="ផ្ទាំងគ្រប់គ្រងឪពុកម្តាយ">Parent Portal</h3>
-                <p data-en="Check Grades & Notifications" data-km="ពិនិត្យពិន្ទុ និងការជូនដំណឹង">Check Grades & Notifications</p>
+                <h3 data-en="Parent Portal" data-km="ផ្ទាំងឪពុកម្តាយ">Parent Portal</h3>
+                <p data-en="Grades & Communication" data-km="ពិន្ទុ និងការទំនាក់ទំនង">Grades & Communication</p>
             </div>
             <div class="quick-link">
-                <div class="quick-link-icon">🎓</div>
-                <h3 data-en="Admission Guide" data-km="មគ្គុទ្ទេសក៍ចុះឈ្មោះ">Admission Guide</h3>
-                <p data-en="2025 New Student Enrollment" data-km="ការចុះឈ្មោះសិស្សថ្មី ២០២៥">2025 New Student Enrollment</p>
+                <div class="quick-link-icon">🏫</div>
+                <h3 data-en="Departments" data-km="ផ្នែក">Departments</h3>
+                <p data-en="Academic Departments" data-km="ផ្នែកសិក្សា">Academic Departments</p>
+            </div>
+            <div class="quick-link">
+                <div class="quick-link-icon">🎭</div>
+                <h3 data-en="Clubs" data-km="ក្លឹប">Clubs</h3>
+                <p data-en="Student Activities" data-km="សកម្មភាពសិស្ស">Student Activities</p>
+            </div>
+            <div class="quick-link">
+                <div class="quick-link-icon">📞</div>
+                <h3 data-en="Contact" data-km="ទំនាក់ទំនង">Contact</h3>
+                <p data-en="Get in Touch" data-km="ទាក់ទង">Get in Touch</p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Latest News Section -->
+    <section class="latest-news">
+        <div class="container">
+            <div class="section-header">
+                <h2 data-en="Latest News" data-km="ព័ត៌មានចុងក្រោយ">Latest News</h2>
+                <a href="#news" class="view-all" data-en="View all" data-km="មើលទាំងអស់">View all</a>
+            </div>
+            <div class="news-grid">
+                <article class="news-card">
+                    <div class="news-image">
+                        <span class="news-date">2025.01.15</span>
+                        <span class="news-category" data-en="Announcement" data-km="ប្រកាស">Announcement</span>
+                    </div>
+                    <div class="news-content">
+                        <h3 data-en="2025-2026 Academic Year Enrollment Opens" data-km="ការចុះឈ្មោះឆ្នាំសិក្សា ២០២៥-២០២៦ បើកចំហ">2025-2026 Academic Year Enrollment Opens</h3>
+                        <p data-en="Registration for new students begins January 20th. Early application deadline is March 15th." data-km="ការចុះឈ្មោះសិស្សថ្មីចាប់ផ្តើមថ្ងៃទី២០មករា។ កាលបរិច្ឆេទដាក់ពាក្យមុនគឺថ្ងៃទី១៥មីនា។">Registration for new students begins January 20th. Early application deadline is March 15th.</p>
+                    </div>
+                </article>
+                <article class="news-card">
+                    <div class="news-image">
+                        <span class="news-date">2025.01.12</span>
+                        <span class="news-category" data-en="Achievement" data-km="សមិទ្ធិផល">Achievement</span>
+                    </div>
+                    <div class="news-content">
+                        <h3 data-en="Science Fair Winners Announced" data-km="ប្រកាសអ្នកឈ្នះការប្រកួតវិទ្យាសាស្ត្រ">Science Fair Winners Announced</h3>
+                        <p data-en="Congratulations to our students who won regional science competition awards." data-km="សូមអបអរសាទរដល់សិស្សរបស់យើងដែលឈ្នះពានរង្វាន់ការប្រកួតវិទ្យាសាស្ត្រក្នុងតំបន់។">Congratulations to our students who won regional science competition awards.</p>
+                    </div>
+                </article>
+                <article class="news-card">
+                    <div class="news-image">
+                        <span class="news-date">2025.01.10</span>
+                        <span class="news-category" data-en="Event" data-km="ព្រឹត្តិការណ៍">Event</span>
+                    </div>
+                    <div class="news-content">
+                        <h3 data-en="Parent-Teacher Conference Scheduled" data-km="ការប្រជុំឪពុកម្តាយ-គ្រូបង្រៀនត្រូវបានកំណត់">Parent-Teacher Conference Scheduled</h3>
+                        <p data-en="Join us for the quarterly parent-teacher conference on January 25th at 2:00 PM." data-km="សូមចូលរួមការប្រជុំឪពុកម្តាយ-គ្រូបង្រៀនត្រីមាសនៅថ្ងៃទី២៥មករា ម៉ោង២:០០ល្ងាច។">Join us for the quarterly parent-teacher conference on January 25th at 2:00 PM.</p>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Mini Calendar Section -->
+    <section class="mini-calendar">
+        <div class="container">
+            <div class="section-header">
+                <h2 data-en="Upcoming Events" data-km="ព្រឹត្តិការណ៍ខាងមុខ">Upcoming Events</h2>
+            </div>
+            <div class="calendar-list">
+                <div class="calendar-item">
+                    <div class="calendar-date">
+                        <span class="day">20</span>
+                        <span class="month" data-en="Jan" data-km="មករា">Jan</span>
+                    </div>
+                    <div class="calendar-content">
+                        <h4 data-en="New Student Registration Opens" data-km="ការចុះឈ្មោះសិស្សថ្មីបើកចំហ">New Student Registration Opens</h4>
+                        <p data-en="9:00 AM - 4:00 PM" data-km="៩:០០ព្រឹក - ៤:០០ល្ងាច">9:00 AM - 4:00 PM</p>
+                    </div>
+                </div>
+                <div class="calendar-item">
+                    <div class="calendar-date">
+                        <span class="day">25</span>
+                        <span class="month" data-en="Jan" data-km="មករា">Jan</span>
+                    </div>
+                    <div class="calendar-content">
+                        <h4 data-en="Parent-Teacher Conference" data-km="ការប្រជុំឪពុកម្តាយ-គ្រូបង្រៀន">Parent-Teacher Conference</h4>
+                        <p data-en="2:00 PM - 5:00 PM" data-km="២:០០ល្ងាច - ៥:០០ល្ងាច">2:00 PM - 5:00 PM</p>
+                    </div>
+                </div>
+                <div class="calendar-item">
+                    <div class="calendar-date">
+                        <span class="day">30</span>
+                        <span class="month" data-en="Jan" data-km="មករា">Jan</span>
+                    </div>
+                    <div class="calendar-content">
+                        <h4 data-en="Science Club Meeting" data-km="ការប្រជុំក្លឹបវិទ្យាសាស្ត្រ">Science Club Meeting</h4>
+                        <p data-en="3:30 PM - 4:30 PM" data-km="៣:៣០ល្ងាច - ៤:៣០ល្ងាច">3:30 PM - 4:30 PM</p>
+                    </div>
+                </div>
+                <div class="calendar-item">
+                    <div class="calendar-date">
+                        <span class="day">02</span>
+                        <span class="month" data-en="Feb" data-km="កុម្ភៈ">Feb</span>
+                    </div>
+                    <div class="calendar-content">
+                        <h4 data-en="Sports Day Preparation" data-km="ការរៀបចំថ្ងៃកីឡា">Sports Day Preparation</h4>
+                        <p data-en="All Day" data-km="ពេញមួយថ្ងៃ">All Day</p>
+                    </div>
+                </div>
+                <div class="calendar-item">
+                    <div class="calendar-date">
+                        <span class="day">15</span>
+                        <span class="month" data-en="Mar" data-km="មីនា">Mar</span>
+                    </div>
+                    <div class="calendar-content">
+                        <h4 data-en="Early Application Deadline" data-km="កាលបរិច្ឆេទដាក់ពាក្យមុន">Early Application Deadline</h4>
+                        <p data-en="4:00 PM" data-km="៤:០០ល្ងាច">4:00 PM</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2 data-en="Ready to Join Our Community?" data-km="ត្រៀមចូលរួមសហគមន៍របស់យើងហើយឬនៅ?">Ready to Join Our Community?</h2>
+                <p data-en="Take the first step towards excellence in education" data-km="ចាប់ផ្តើមជំហានដំបូងឆ្ពោះទៅរកឧត្តមភាពក្នុងការអប់រំ">Take the first step towards excellence in education</p>
+                <div class="cta-buttons">
+                    <a href="#admissions" class="btn btn-primary" data-en="Apply Now" data-km="ដាក់ពាក្យឥឡូវ">Apply Now</a>
+                    <a href="#contact" class="btn btn-secondary" data-en="Visit Campus" data-km="ទស្សនាបរិវេណ">Visit Campus</a>
+                </div>
             </div>
         </div>
     </section>
@@ -131,14 +327,152 @@
     <!-- About Section -->
     <section id="about" class="about">
         <div class="container">
-            <div class="grid">
-                <div class="about-text">
-                    <h2 data-en="About Us" data-km="អំពីយើង">About Us</h2>
-                    <p data-en="Hun Sen Sereypheap High School is a respected public secondary school in Takhmao, Kandal. We offer a comprehensive curriculum from lower to upper secondary with Khmer literature, mathematics, science, foreign languages, social studies, and computer science. With supportive teachers, a safe and disciplined environment, and diverse clubs and sports, students build knowledge, character, and confidence. We prepare learners for the national exam (Bac II), higher education, and community leadership—helping every student develop the skills and values to contribute positively to Cambodia's future." data-km="វិទ្យាល័យ ហ៊ុន សែន សិរីភាព គឺជាវិទ្យាល័យរដ្ឋាភិបាលដ៏គួរឱ្យគោរពមួយនៅត្រពាំងព្រីង ខេត្តកណ្តាល។ យើងផ្តល់កម្មវិធីសិក្សាទូលំទូលាយពីថ្នាក់ទាបដល់ថ្នាក់ខ្ពស់ រួមមានអក្សរសាស្ត្រខ្មែរ គណិតវិទ្យា វិទ្យាសាស្ត្រ ភាសាបរទេស សិក្សាសង្គម និងវិទ្យាកុំព្យូទ័រ។ ជាមួយគ្រូបង្រៀនគាំទ្រ បរិស្ថានសុវត្ថិភាព និងវិន័យ និងក្លឹប និងកីឡាចម្រុះ សិស្សបង្កើតចំណេះដឹង ចរិតលក្ខណៈ និងទំនុកចិត្ត។ យើងរៀបចំអ្នករៀនសម្រាប់ការប្រឡងជាតិ (Bac II) ការអប់រំខ្ពស់ និងភាពជាអ្នកដឹកនាំសហគមន៍—ជួយសិស្សគ្រប់រូបអភិវឌ្ឍជំនាញ និងតម្លៃដើម្បីចូលរួមយ៉ាងវិជ្ជមានចំពោះអនាគតកម្ពុជា។">Hun Sen Sereypheap High School is a respected public secondary school in Takhmao, Kandal. We offer a comprehensive curriculum from lower to upper secondary with Khmer literature, mathematics, science, foreign languages, social studies, and computer science. With supportive teachers, a safe and disciplined environment, and diverse clubs and sports, students build knowledge, character, and confidence. We prepare learners for the national exam (Bac II), higher education, and community leadership—helping every student develop the skills and values to contribute positively to Cambodia's future.</p>
+            <!-- Welcome from Principal -->
+            <div id="about-welcome" class="about-subsection">
+                <div class="grid">
+                    <div class="about-text">
+                        <h2 data-en="Welcome from Principal" data-km="ស្វាគមន៍ពីអគ្គនាយក">Welcome from Principal</h2>
+                        <p data-en="Hun Sen Sereypheap High School is a respected public secondary school in Takhmao, Kandal. We offer a comprehensive curriculum from lower to upper secondary with Khmer literature, mathematics, science, foreign languages, social studies, and computer science. With supportive teachers, a safe and disciplined environment, and diverse clubs and sports, students build knowledge, character, and confidence. We prepare learners for the national exam (Bac II), higher education, and community leadership—helping every student develop the skills and values to contribute positively to Cambodia's future." data-km="វិទ្យាល័យ ហ៊ុន សែន សិរីភាព គឺជាវិទ្យាល័យរដ្ឋាភិបាលដ៏គួរឱ្យគោរពមួយនៅត្រពាំងព្រីង ខេត្តកណ្តាល។ យើងផ្តល់កម្មវិធីសិក្សាទូលំទូលាយពីថ្នាក់ទាបដល់ថ្នាក់ខ្ពស់ រួមមានអក្សរសាស្ត្រខ្មែរ គណិតវិទ្យា វិទ្យាសាស្ត្រ ភាសាបរទេស សិក្សាសង្គម និងវិទ្យាកុំព្យូទ័រ។ ជាមួយគ្រូបង្រៀនគាំទ្រ បរិស្ថានសុវត្ថិភាព និងវិន័យ និងក្លឹប និងកីឡាចម្រុះ សិស្សបង្កើតចំណេះដឹង ចរិតលក្ខណៈ និងទំនុកចិត្ត។ យើងរៀបចំអ្នករៀនសម្រាប់ការប្រឡងជាតិ (Bac II) ការអប់រំខ្ពស់ និងភាពជាអ្នកដឹកនាំសហគមន៍—ជួយសិស្សគ្រប់រូបអភិវឌ្ឍជំនាញ និងតម្លៃដើម្បីចូលរួមយ៉ាងវិជ្ជមានចំពោះអនាគតកម្ពុជា។">Hun Sen Sereypheap High School is a respected public secondary school in Takhmao, Kandal. We offer a comprehensive curriculum from lower to upper secondary with Khmer literature, mathematics, science, foreign languages, social studies, and computer science. With supportive teachers, a safe and disciplined environment, and diverse clubs and sports, students build knowledge, character, and confidence. We prepare learners for the national exam (Bac II), higher education, and community leadership—helping every student develop the skills and values to contribute positively to Cambodia's future.</p>
+                    </div>
+                    <figure class="about-media">
+                        <img src="schoollogo-removebg-preview.png" alt="Campus and student life" loading="lazy" width="400" height="300">
+                    </figure>
                 </div>
-                <figure class="about-media">
-                    <img src="schoollogo-removebg-preview.png" alt="Campus and student life" loading="lazy" width="400" height="300">
-                </figure>
+            </div>
+            
+            <!-- Mission & Vision -->
+            <div id="about-mission" class="about-subsection">
+                <div class="section-header">
+                    <h2 data-en="Mission & Vision" data-km="បេសកកម្ម និងទស្សនវិស័យ">Mission & Vision</h2>
+                </div>
+                <div class="mission-vision-grid">
+                    <div class="mission-card">
+                        <div class="card-icon">🎯</div>
+                        <h3 data-en="Our Mission" data-km="បេសកកម្មរបស់យើង">Our Mission</h3>
+                        <p data-en="To provide quality education that develops critical thinking, creativity, and character in a safe, disciplined environment." data-km="ផ្តល់អប់រំគុណភាពខ្ពស់ដែលអភិវឌ្ឍការគិតវិជ្ជមាន ភាពច្នៃប្រឌិត និងចរិតលក្ខណៈក្នុងបរិស្ថានសុវត្ថិភាព និងវិន័យ។">To provide quality education that develops critical thinking, creativity, and character in a safe, disciplined environment.</p>
+                    </div>
+                    <div class="vision-card">
+                        <div class="card-icon">🌟</div>
+                        <h3 data-en="Our Vision" data-km="ទស្សនវិស័យរបស់យើង">Our Vision</h3>
+                        <p data-en="To be a leading educational institution that nurtures global citizens and future leaders of Cambodia." data-km="ក្លាយជាស្ថាប័នអប់រំដឹកនាំដែលបណ្តុះបណ្តាលពលរដ្ឋសកលលោក និងអ្នកដឹកនាំអនាគតរបស់កម្ពុជា។">To be a leading educational institution that nurtures global citizens and future leaders of Cambodia.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- History -->
+            <div id="about-history" class="about-subsection">
+                <div class="section-header">
+                    <h2 data-en="School History" data-km="ប្រវត្តិសាលា">School History</h2>
+                </div>
+                <div class="history-timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-year">2010</div>
+                        <div class="timeline-content">
+                            <h4 data-en="Foundation" data-km="ការបង្កើត">Foundation</h4>
+                            <p data-en="Hun Sen Serey Pheap High School was established to serve the educational needs of Takhmao community." data-km="វិទ្យាល័យ ហ៊ុន សែន សិរីភាព ត្រូវបានបង្កើតឡើងដើម្បីបំពេញតម្រូវការអប់រំរបស់សហគមន៍ត្រពាំងព្រីង។">Hun Sen Serey Pheap High School was established to serve the educational needs of Takhmao community.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-year">2015</div>
+                        <div class="timeline-content">
+                            <h4 data-en="Expansion" data-km="ការពង្រីក">Expansion</h4>
+                            <p data-en="New facilities and programs were added to accommodate growing student population." data-km="គ្រឿងបរិក្ខារ និងកម្មវិធីថ្មីត្រូវបានបន្ថែមដើម្បីផ្តល់កន្លែងសម្រាប់សិស្សដែលកើនឡើង។">New facilities and programs were added to accommodate growing student population.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-year">2020</div>
+                        <div class="timeline-content">
+                            <h4 data-en="Digital Innovation" data-km="នវានុវត្តន៍ឌីជីថល">Digital Innovation</h4>
+                            <p data-en="Smart classrooms and digital learning platforms were introduced." data-km="បន្ទប់រៀនឆ្លាតវៃ និងវេទិកាសិក្សាឌីជីថលត្រូវបានណែនាំ។">Smart classrooms and digital learning platforms were introduced.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Leadership & Staff -->
+            <div id="about-staff" class="about-subsection">
+                <div class="section-header">
+                    <h2 data-en="Leadership & Staff" data-km="ភាពជាអ្នកដឹកនាំ និងបុគ្គលិក">Leadership & Staff</h2>
+                </div>
+                <div class="staff-grid">
+                    <div class="staff-card">
+                        <div class="staff-photo">
+                            <img src="schoollogo-removebg-preview.png" alt="Principal" loading="lazy">
+                        </div>
+                        <h4 data-en="Dr. Sokha Chen" data-km="លោកបណ្ឌិត សុខា ចេន">Dr. Sokha Chen</h4>
+                        <p data-en="Principal" data-km="អគ្គនាយក">Principal</p>
+                        <p class="staff-contact" data-en="principal@hssphighschool.edu.kh" data-km="principal@hssphighschool.edu.kh">principal@hssphighschool.edu.kh</p>
+                    </div>
+                    <div class="staff-card">
+                        <div class="staff-photo">
+                            <img src="schoollogo-removebg-preview.png" alt="Vice Principal" loading="lazy">
+                        </div>
+                        <h4 data-en="Ms. Sreypov Lim" data-km="លោកស្រី ស្រីពៅ លីម">Ms. Sreypov Lim</h4>
+                        <p data-en="Vice Principal" data-km="អគ្គនាយករង">Vice Principal</p>
+                        <p class="staff-contact" data-en="vice-principal@hssphighschool.edu.kh" data-km="vice-principal@hssphighschool.edu.kh">vice-principal@hssphighschool.edu.kh</p>
+                    </div>
+                    <div class="staff-card">
+                        <div class="staff-photo">
+                            <img src="schoollogo-removebg-preview.png" alt="Academic Director" loading="lazy">
+                        </div>
+                        <h4 data-en="Mr. Vannak Kim" data-km="លោក វណ្ណក គីម">Mr. Vannak Kim</h4>
+                        <p data-en="Academic Director" data-km="អគ្គនាយកសិក្សា">Academic Director</p>
+                        <p class="staff-contact" data-en="academic@hssphighschool.edu.kh" data-km="academic@hssphighschool.edu.kh">academic@hssphighschool.edu.kh</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Campus Facilities -->
+            <div id="about-facilities" class="about-subsection">
+                <div class="section-header">
+                    <h2 data-en="Campus Facilities" data-km="គ្រឿងបរិក្ខារបរិវេណ">Campus Facilities</h2>
+                </div>
+                <div class="facilities-grid">
+                    <div class="facility-card">
+                        <div class="facility-icon">📚</div>
+                        <h4 data-en="Library" data-km="បណ្ណាល័យ">Library</h4>
+                        <p data-en="Modern library with digital resources and study spaces" data-km="បណ្ណាល័យទំនើបជាមួយធនធានឌីជីថល និងកន្លែងសិក្សា">Modern library with digital resources and study spaces</p>
+                    </div>
+                    <div class="facility-card">
+                        <div class="facility-icon">🔬</div>
+                        <h4 data-en="Science Labs" data-km="មន្ទីរពិសោធន៍វិទ្យាសាស្ត្រ">Science Labs</h4>
+                        <p data-en="Well-equipped laboratories for physics, chemistry, and biology" data-km="មន្ទីរពិសោធន៍ប្រកបដោយគ្រឿងបរិក្ខារសម្រាប់រូបវិទ្យា គីមីវិទ្យា និងជីវវិទ្យា">Well-equipped laboratories for physics, chemistry, and biology</p>
+                    </div>
+                    <div class="facility-card">
+                        <div class="facility-icon">💻</div>
+                        <h4 data-en="Computer Labs" data-km="មន្ទីរកុំព្យូទ័រ">Computer Labs</h4>
+                        <p data-en="Modern computer labs with latest technology" data-km="មន្ទីរកុំព្យូទ័រទំនើបជាមួយបច្ចេកវិទ្យាចុងក្រោយ">Modern computer labs with latest technology</p>
+                    </div>
+                    <div class="facility-card">
+                        <div class="facility-icon">🏃</div>
+                        <h4 data-en="Sports Field" data-km="ទីលានកីឡា">Sports Field</h4>
+                        <p data-en="Large sports field for various athletic activities" data-km="ទីលានកីឡាធំសម្រាប់សកម្មភាពកីឡាចម្រុះ">Large sports field for various athletic activities</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Achievements & Awards -->
+            <div id="about-achievements" class="about-subsection">
+                <div class="section-header">
+                    <h2 data-en="Achievements & Awards" data-km="សមិទ្ធិផល និងពានរង្វាន់">Achievements & Awards</h2>
+                </div>
+                <div class="achievements-grid">
+                    <div class="achievement-card">
+                        <div class="achievement-year">2024</div>
+                        <h4 data-en="Best Public School Award" data-km="ពានរង្វាន់សាលារដ្ឋាភិបាលល្អបំផុត">Best Public School Award</h4>
+                        <p data-en="Recognized by Ministry of Education for excellence in teaching and student outcomes" data-km="ត្រូវបានទទួលស្គាល់ដោយក្រសួងអប់រំសម្រាប់ឧត្តមភាពក្នុងការបង្រៀន និងលទ្ធផលសិស្ស">Recognized by Ministry of Education for excellence in teaching and student outcomes</p>
+                    </div>
+                    <div class="achievement-card">
+                        <div class="achievement-year">2023</div>
+                        <h4 data-en="Science Competition Champions" data-km="អ្នកឈ្នះការប្រកួតវិទ្យាសាស្ត្រ">Science Competition Champions</h4>
+                        <p data-en="First place in regional science fair competition" data-km="ចំណែកទី១ក្នុងការប្រកួតវិទ្យាសាស្ត្រក្នុងតំបន់">First place in regional science fair competition</p>
+                    </div>
+                    <div class="achievement-card">
+                        <div class="achievement-year">2022</div>
+                        <h4 data-en="Digital Innovation Award" data-km="ពានរង្វាន់នវានុវត្តន៍ឌីជីថល">Digital Innovation Award</h4>
+                        <p data-en="Awarded for implementing smart classroom technology" data-km="ត្រូវបានផ្តល់ពានរង្វាន់សម្រាប់ការអនុវត្តបច្ចេកវិទ្យាបន្ទប់រៀនឆ្លាតវៃ">Awarded for implementing smart classroom technology</p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -178,86 +512,587 @@
     </section>
 
     <!-- Academics Section -->
-    <section class="section" id="academics">
-        <div class="section-content">
-            <div class="section-header">
-                <h2 data-en="Academic Programs" data-km="កម្មវិធីសិក្សា">Academic Programs</h2>
-                <p data-en="Comprehensive curriculum designed for student success" data-km="កម្មវិធីសិក្សាទូលំទូលាយដែលបានរចនាសម្រាប់ជោគជ័យរបស់សិស្ស">Comprehensive curriculum designed for student success</p>
+    <section id="academics" class="academics">
+        <div class="container">
+            <!-- Curriculum Tabs -->
+            <div id="academics-curriculum" class="academics-subsection">
+                <div class="section-header">
+                    <h2 data-en="Curriculum" data-km="កម្មវិធីសិក្សា">Curriculum</h2>
+                    <p data-en="Comprehensive academic programs from Grade 7 to Grade 12" data-km="កម្មវិធីសិក្សាទូលំទូលាយពីថ្នាក់ទី៧ដល់ថ្នាក់ទី១២">Comprehensive academic programs from Grade 7 to Grade 12</p>
+                </div>
+                <div class="curriculum-tabs">
+                    <div class="tab-buttons">
+                        <button class="tab-btn active" data-grade="7-9" data-en="Lower Secondary (7-9)" data-km="អនុវិទ្យាល័យ (៧-៩)">Lower Secondary (7-9)</button>
+                        <button class="tab-btn" data-grade="10-12" data-en="Upper Secondary (10-12)" data-km="វិទ្យាល័យ (១០-១២)">Upper Secondary (10-12)</button>
+                    </div>
+                    <div class="tab-content">
+                        <div class="tab-panel active" id="grade-7-9">
+                            <div class="curriculum-grid">
+                                <div class="subject-category">
+                                    <h4 data-en="Core Subjects" data-km="មុខវិជ្ជាមូលដ្ឋាន">Core Subjects</h4>
+                                    <ul>
+                                        <li data-en="Khmer Literature" data-km="អក្សរសាស្ត្រខ្មែរ">Khmer Literature</li>
+                                        <li data-en="Mathematics" data-km="គណិតវិទ្យា">Mathematics</li>
+                                        <li data-en="Science" data-km="វិទ្យាសាស្ត្រ">Science</li>
+                                        <li data-en="Social Studies" data-km="សិក្សាសង្គម">Social Studies</li>
+                                    </ul>
+                                </div>
+                                <div class="subject-category">
+                                    <h4 data-en="Foreign Languages" data-km="ភាសាបរទេស">Foreign Languages</h4>
+                                    <ul>
+                                        <li data-en="English" data-km="ភាសាអង់គ្លេស">English</li>
+                                        <li data-en="Chinese" data-km="ភាសាចិន">Chinese</li>
+                                    </ul>
+                                </div>
+                                <div class="subject-category">
+                                    <h4 data-en="Technology" data-km="បច្ចេកវិទ្យា">Technology</h4>
+                                    <ul>
+                                        <li data-en="Computer Science" data-km="វិទ្យាកុំព្យូទ័រ">Computer Science</li>
+                                        <li data-en="ICT" data-km="ព័ត៌មានវិទ្យា">ICT</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-panel" id="grade-10-12">
+                            <div class="curriculum-grid">
+                                <div class="subject-category">
+                                    <h4 data-en="Core Subjects" data-km="មុខវិជ្ជាមូលដ្ឋាន">Core Subjects</h4>
+                                    <ul>
+                                        <li data-en="Khmer Literature" data-km="អក្សរសាស្ត្រខ្មែរ">Khmer Literature</li>
+                                        <li data-en="Mathematics" data-km="គណិតវិទ្យា">Mathematics</li>
+                                        <li data-en="Physics" data-km="រូបវិទ្យា">Physics</li>
+                                        <li data-en="Chemistry" data-km="គីមីវិទ្យា">Chemistry</li>
+                                        <li data-en="Biology" data-km="ជីវវិទ្យា">Biology</li>
+                                        <li data-en="History" data-km="ប្រវត្តិវិទ្យា">History</li>
+                                        <li data-en="Geography" data-km="ភូមិវិទ្យា">Geography</li>
+                                    </ul>
+                                </div>
+                                <div class="subject-category">
+                                    <h4 data-en="Elective Subjects" data-km="មុខវិជ្ជាជ្រើសរើស">Elective Subjects</h4>
+                                    <ul>
+                                        <li data-en="Advanced English" data-km="អង់គ្លេសកម្រិតខ្ពស់">Advanced English</li>
+                                        <li data-en="Advanced Mathematics" data-km="គណិតវិទ្យាកម្រិតខ្ពស់">Advanced Mathematics</li>
+                                        <li data-en="Economics" data-km="សេដ្ឋកិច្ច">Economics</li>
+                                        <li data-en="Computer Programming" data-km="កម្មវិធីកុំព្យូទ័រ">Computer Programming</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="features-grid">
-                <div class="feature-card">
-                    <div class="feature-icon">🔬</div>
-                    <h3 data-en="Science & Technology" data-km="វិទ្យាសាស្ត្រ និងបច្ចេកវិទ្យា">Science & Technology</h3>
-                    <p data-en="Advanced STEM programs with modern laboratories" data-km="កម្មវិធី STEM កម្រិតខ្ពស់ជាមួយមន្ទីរពិសោធន៍ទំនើប">Advanced STEM programs with modern laboratories</p>
+            
+            <!-- Departments -->
+            <div id="academics-departments" class="academics-subsection">
+                <div class="section-header">
+                    <h2 data-en="Academic Departments" data-km="ផ្នែកសិក្សា">Academic Departments</h2>
                 </div>
-                <div class="feature-card">
-                    <div class="feature-icon">🌍</div>
-                    <h3 data-en="Languages" data-km="ភាសា">Languages</h3>
-                    <p data-en="English, Chinese, and Khmer language programs" data-km="កម្មវិធីភាសាអង់គ្លេស ចិន និងខ្មែរ">English, Chinese, and Khmer language programs</p>
+                <div class="departments-grid">
+                    <div class="department-card">
+                        <div class="department-icon">📚</div>
+                        <h4 data-en="Khmer Literature" data-km="អក្សរសាស្ត្រខ្មែរ">Khmer Literature</h4>
+                        <p data-en="Head: Ms. Sreypov Lim" data-km="ប្រធាន: លោកស្រី ស្រីពៅ លីម">Head: Ms. Sreypov Lim</p>
+                        <a href="#contact" class="department-link" data-en="Contact Department" data-km="ទាក់ទងផ្នែក">Contact Department</a>
+                    </div>
+                    <div class="department-card">
+                        <div class="department-icon">🔢</div>
+                        <h4 data-en="Mathematics" data-km="គណិតវិទ្យា">Mathematics</h4>
+                        <p data-en="Head: Mr. Vannak Kim" data-km="ប្រធាន: លោក វណ្ណក គីម">Head: Mr. Vannak Kim</p>
+                        <a href="#contact" class="department-link" data-en="Contact Department" data-km="ទាក់ទងផ្នែក">Contact Department</a>
+                    </div>
+                    <div class="department-card">
+                        <div class="department-icon">🔬</div>
+                        <h4 data-en="Science" data-km="វិទ្យាសាស្ត្រ">Science</h4>
+                        <p data-en="Head: Dr. Sokha Chen" data-km="ប្រធាន: លោកបណ្ឌិត សុខា ចេន">Head: Dr. Sokha Chen</p>
+                        <a href="#contact" class="department-link" data-en="Contact Department" data-km="ទាក់ទងផ្នែក">Contact Department</a>
+                    </div>
+                    <div class="department-card">
+                        <div class="department-icon">🌍</div>
+                        <h4 data-en="Foreign Languages" data-km="ភាសាបរទេស">Foreign Languages</h4>
+                        <p data-en="Head: Ms. Sreypov Lim" data-km="ប្រធាន: លោកស្រី ស្រីពៅ លីម">Head: Ms. Sreypov Lim</p>
+                        <a href="#contact" class="department-link" data-en="Contact Department" data-km="ទាក់ទងផ្នែក">Contact Department</a>
+                    </div>
+                    <div class="department-card">
+                        <div class="department-icon">💻</div>
+                        <h4 data-en="ICT" data-km="ព័ត៌មានវិទ្យា">ICT</h4>
+                        <p data-en="Head: Mr. Vannak Kim" data-km="ប្រធាន: លោក វណ្ណក គីម">Head: Mr. Vannak Kim</p>
+                        <a href="#contact" class="department-link" data-en="Contact Department" data-km="ទាក់ទងផ្នែក">Contact Department</a>
+                    </div>
+                    <div class="department-card">
+                        <div class="department-icon">🏛️</div>
+                        <h4 data-en="Social Studies" data-km="សិក្សាសង្គម">Social Studies</h4>
+                        <p data-en="Head: Dr. Sokha Chen" data-km="ប្រធាន: លោកបណ្ឌិត សុខា ចេន">Head: Dr. Sokha Chen</p>
+                        <a href="#contact" class="department-link" data-en="Contact Department" data-km="ទាក់ទងផ្នែក">Contact Department</a>
+                    </div>
                 </div>
-                <div class="feature-card">
-                    <div class="feature-icon">🎓</div>
-                    <h3 data-en="Bac II Preparation" data-km="ការរៀបចំ Bac II">Bac II Preparation</h3>
-                    <p data-en="Comprehensive preparation for university entrance" data-km="ការរៀបចំទូលំទូលាយសម្រាប់ការចូលមហាវិទ្យាល័យ">Comprehensive preparation for university entrance</p>
+            </div>
+            
+            <!-- Academic Calendar -->
+            <div id="academics-calendar" class="academics-subsection">
+                <div class="section-header">
+                    <h2 data-en="Academic Calendar" data-km="ប្រតិទិនសិក្សា">Academic Calendar</h2>
+                </div>
+                <div class="calendar-actions">
+                    <a href="#" class="calendar-btn" data-en="Download ICS File" data-km="ទាញយកឯកសារ ICS">Download ICS File</a>
+                    <a href="#" class="calendar-btn" data-en="Add to Google Calendar" data-km="បន្ថែមទៅ Google Calendar">Add to Google Calendar</a>
+                </div>
+                <div class="calendar-events">
+                    <div class="event-item">
+                        <div class="event-date">
+                            <span class="month" data-en="Jan" data-km="មករា">Jan</span>
+                            <span class="day">20</span>
+                        </div>
+                        <div class="event-content">
+                            <h4 data-en="First Day of School" data-km="ថ្ងៃចាប់ផ្តើមសិក្សា">First Day of School</h4>
+                            <p data-en="Academic Year 2025-2026 begins" data-km="ឆ្នាំសិក្សា ២០២៥-២០២៦ចាប់ផ្តើម">Academic Year 2025-2026 begins</p>
+                        </div>
+                    </div>
+                    <div class="event-item">
+                        <div class="event-date">
+                            <span class="month" data-en="Mar" data-km="មីនា">Mar</span>
+                            <span class="day">15</span>
+                        </div>
+                        <div class="event-content">
+                            <h4 data-en="Mid-Term Exams" data-km="ការប្រឡងកណ្តាលឆមាស">Mid-Term Exams</h4>
+                            <p data-en="First semester mid-term examinations" data-km="ការប្រឡងកណ្តាលឆមាសទី១">First semester mid-term examinations</p>
+                        </div>
+                    </div>
+                    <div class="event-item">
+                        <div class="event-date">
+                            <span class="month" data-en="Jun" data-km="មិថុនា">Jun</span>
+                            <span class="day">30</span>
+                        </div>
+                        <div class="event-content">
+                            <h4 data-en="End of First Semester" data-km="ចប់ឆមាសទី១">End of First Semester</h4>
+                            <p data-en="First semester concludes" data-km="ឆមាសទី១បញ្ចប់">First semester concludes</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Bac II Information -->
+            <div id="academics-bac" class="academics-subsection">
+                <div class="section-header">
+                    <h2 data-en="National Exam (Bac II)" data-km="ការប្រឡងជាតិ (Bac II)">National Exam (Bac II)</h2>
+                </div>
+                <div class="bac-info">
+                    <div class="bac-overview">
+                        <h3 data-en="Exam Overview" data-km="ទិដ្ឋភាពទូទៅនៃការប្រឡង">Exam Overview</h3>
+                        <p data-en="The Bac II examination is Cambodia's national high school graduation exam. Students must pass this exam to receive their high school diploma and be eligible for university admission." data-km="ការប្រឡង Bac II គឺជាការប្រឡងបញ្ចប់វិទ្យាល័យជាតិរបស់កម្ពុជា។ សិស្សត្រូវតែជាប់ការប្រឡងនេះដើម្បីទទួលបានសញ្ញាបត្រវិទ្យាល័យ និងមានសិទ្ធិចូលមហាវិទ្យាល័យ។">The Bac II examination is Cambodia's national high school graduation exam. Students must pass this exam to receive their high school diploma and be eligible for university admission.</p>
+                    </div>
+                    <div class="bac-faq">
+                        <h3 data-en="Frequently Asked Questions" data-km="សំណួរដែលសួរញឹកញាប់">Frequently Asked Questions</h3>
+                        <div class="faq-item">
+                            <button class="faq-question" data-en="When is the Bac II exam held?" data-km="ការប្រឡង Bac II ត្រូវបានរៀបចំនៅពេលណា?">When is the Bac II exam held?</button>
+                            <div class="faq-answer">
+                                <p data-en="The Bac II exam is typically held in August each year. Exact dates are announced by the Ministry of Education." data-km="ការប្រឡង Bac II ជាធម្មតាត្រូវបានរៀបចំនៅខែសីហារៀងរាល់ឆ្នាំ។ កាលបរិច្ឆេទពិតប្រាកដត្រូវបានប្រកាសដោយក្រសួងអប់រំ។">The Bac II exam is typically held in August each year. Exact dates are announced by the Ministry of Education.</p>
+                            </div>
+                        </div>
+                        <div class="faq-item">
+                            <button class="faq-question" data-en="What subjects are tested?" data-km="មុខវិជ្ជាអ្វីខ្លះដែលត្រូវប្រឡង?">What subjects are tested?</button>
+                            <div class="faq-answer">
+                                <p data-en="The exam covers Khmer Literature, Mathematics, Science (Physics, Chemistry, Biology), Social Studies, and Foreign Languages." data-km="ការប្រឡងគ្របដណ្តប់អក្សរសាស្ត្រខ្មែរ គណិតវិទ្យា វិទ្យាសាស្ត្រ (រូបវិទ្យា គីមីវិទ្យា ជីវវិទ្យា) សិក្សាសង្គម និងភាសាបរទេស។">The exam covers Khmer Literature, Mathematics, Science (Physics, Chemistry, Biology), Social Studies, and Foreign Languages.</p>
+                            </div>
+                        </div>
+                        <div class="faq-item">
+                            <button class="faq-question" data-en="How is the exam scored?" data-km="ការប្រឡងត្រូវបានដាក់ពិន្ទុយ៉ាងណា?">How is the exam scored?</button>
+                            <div class="faq-answer">
+                                <p data-en="Each subject is scored out of 20 points. Students need to achieve an average of 10/20 to pass the exam." data-km="មុខវិជ្ជានីមួយៗត្រូវបានដាក់ពិន្ទុចេញពី ២០ ពិន្ទុ។ សិស្សត្រូវតែសម្រេចបានពិន្ទុមធ្យម ១០/២០ ដើម្បីជាប់ការប្រឡង។">Each subject is scored out of 20 points. Students need to achieve an average of 10/20 to pass the exam.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- University Guidance -->
+            <div id="academics-guidance" class="academics-subsection">
+                <div class="section-header">
+                    <h2 data-en="University Guidance" data-km="ការណែនាំមហាវិទ្យាល័យ">University Guidance</h2>
+                </div>
+                <div class="guidance-content">
+                    <div class="guidance-checklist">
+                        <h3 data-en="University Application Checklist" data-km="បញ្ជីពិនិត្យការដាក់ពាក្យមហាវិទ្យាល័យ">University Application Checklist</h3>
+                        <ul class="checklist">
+                            <li data-en="✓ Complete Bac II examination" data-km="✓ បញ្ចប់ការប្រឡង Bac II">✓ Complete Bac II examination</li>
+                            <li data-en="✓ Research universities and programs" data-km="✓ ស្រាវជ្រាវមហាវិទ្យាល័យ និងកម្មវិធី">✓ Research universities and programs</li>
+                            <li data-en="✓ Prepare application documents" data-km="✓ រៀបចំឯកសារដាក់ពាក្យ">✓ Prepare application documents</li>
+                            <li data-en="✓ Write personal statement" data-km="✓ សរសេរសេចក្តីថ្លែងការណ៍ផ្ទាល់ខ្លួន">✓ Write personal statement</li>
+                            <li data-en="✓ Submit applications before deadlines" data-km="✓ ដាក់ពាក្យមុនកាលបរិច្ឆេទផុតកំណត់">✓ Submit applications before deadlines</li>
+                        </ul>
+                    </div>
+                    <div class="guidance-resources">
+                        <h3 data-en="Helpful Resources" data-km="ធនធានជំនួយ">Helpful Resources</h3>
+                        <div class="resource-links">
+                            <a href="#" class="resource-link" data-en="Ministry of Education" data-km="ក្រសួងអប់រំ">Ministry of Education</a>
+                            <a href="#" class="resource-link" data-en="University Rankings" data-km="ចំណាត់ថ្នាក់មហាវិទ្យាល័យ">University Rankings</a>
+                            <a href="#" class="resource-link" data-en="Scholarship Information" data-km="ព័ត៌មានអាហារូបករណ៍">Scholarship Information</a>
+                            <a href="#" class="resource-link" data-en="Career Guidance" data-km="ការណែនាំអាជីព">Career Guidance</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Admission Section -->
-    <section class="section" id="admission">
-        <div class="section-content">
-            <div class="section-header">
-                <h2 data-en="Admission Information" data-km="ព័ត៌មានចុះឈ្មោះ">Admission Information</h2>
-                <p data-en="Join our community of learners and achievers" data-km="ចូលរួមជាមួយសហគមន៍អ្នករៀន និងអ្នកសម្រេចបានសម្រេចរបស់យើង">Join our community of learners and achievers</p>
+    <!-- Admissions Section -->
+    <section id="admissions" class="admissions">
+        <div class="container">
+            <!-- Enrollment Process Timeline -->
+            <div id="admissions-process" class="admissions-subsection">
+                <div class="section-header">
+                    <h2 data-en="Enrollment Process" data-km="ដំណើរការចុះឈ្មោះ">Enrollment Process</h2>
+                    <p data-en="Simple steps to join our school community" data-km="ជំហានសាមញ្ញដើម្បីចូលរួមសហគមន៍សាលារបស់យើង">Simple steps to join our school community</p>
+                </div>
+                <div class="process-timeline">
+                    <div class="process-step">
+                        <div class="step-number">1</div>
+                        <div class="step-content">
+                            <h4 data-en="Submit Application" data-km="ដាក់ពាក្យសុំ">Submit Application</h4>
+                            <p data-en="Complete the online application form with required documents" data-km="បំពេញទម្រង់ពាក្យសុំអនឡាញជាមួយឯកសារដែលត្រូវការ">Complete the online application form with required documents</p>
+                            <span class="step-duration" data-en="Deadline: March 31" data-km="ថ្ងៃផុតកំណត់: ថ្ងៃទី ៣១ ខែមីនា">Deadline: March 31</span>
+                        </div>
+                    </div>
+                    <div class="process-step">
+                        <div class="step-number">2</div>
+                        <div class="step-content">
+                            <h4 data-en="Document Review" data-km="ពិនិត្យឯកសារ">Document Review</h4>
+                            <p data-en="Our admissions team reviews your application and academic records" data-km="ក្រុមចុះឈ្មោះរបស់យើងពិនិត្យពាក្យសុំ និងកំណត់ត្រាសិក្សារបស់អ្នក">Our admissions team reviews your application and academic records</p>
+                            <span class="step-duration" data-en="Processing: 2-3 weeks" data-km="ដំណើរការ: ២-៣ សប្តាហ៍">Processing: 2-3 weeks</span>
+                        </div>
+                    </div>
+                    <div class="process-step">
+                        <div class="step-number">3</div>
+                        <div class="step-content">
+                            <h4 data-en="Interview & Assessment" data-km="សម្ភាសន៍ និងប៉ាន់ប្រមណ">Interview & Assessment</h4>
+                            <p data-en="Meet with our team for a brief interview and academic assessment" data-km="ជួបជាមួយក្រុមរបស់យើងសម្រាប់សម្ភាសន៍ខ្លី និងប៉ាន់ប្រមណសិក្សា">Meet with our team for a brief interview and academic assessment</p>
+                            <span class="step-duration" data-en="Scheduled: April-May" data-km="កាលបរិច្ឆេទ: ខែមេសា-ឧសភា">Scheduled: April-May</span>
+                        </div>
+                    </div>
+                    <div class="process-step">
+                        <div class="step-number">4</div>
+                        <div class="step-content">
+                            <h4 data-en="Admission Decision" data-km="សេចក្តីសម្រេចចូលរៀន">Admission Decision</h4>
+                            <p data-en="Receive notification of admission status and next steps" data-km="ទទួលបានការជូនដំណឹងអំពីស្ថានភាពចូលរៀន និងជំហានបន្ទាប់">Receive notification of admission status and next steps</p>
+                            <span class="step-duration" data-en="Notification: May 15" data-km="ការជូនដំណឹង: ថ្ងៃទី ១៥ ខែឧសភា">Notification: May 15</span>
+                        </div>
+                    </div>
+                    <div class="process-step">
+                        <div class="step-number">5</div>
+                        <div class="step-content">
+                            <h4 data-en="Enrollment & Orientation" data-km="ចុះឈ្មោះ និងការណែនាំ">Enrollment & Orientation</h4>
+                            <p data-en="Complete final enrollment and attend orientation program" data-km="បញ្ចប់ការចុះឈ្មោះចុងក្រោយ និងចូលរួមកម្មវិធីណែនាំ">Complete final enrollment and attend orientation program</p>
+                            <span class="step-duration" data-en="Orientation: August" data-km="ការណែនាំ: ខែសីហា">Orientation: August</span>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="features-grid">
-                <div class="feature-card">
-                    <div class="feature-icon">📋</div>
-                    <h3 data-en="Application Process" data-km="ដំណើរការដាក់ពាក្យ">Application Process</h3>
-                    <p data-en="Simple and transparent admission procedures" data-km="នីតិវិធីចុះឈ្មោះសាមញ្ញ និងភាពច្បាស់លាស់">Simple and transparent admission procedures</p>
+            
+            <!-- Required Documents -->
+            <div id="admissions-documents" class="admissions-subsection">
+                <div class="section-header">
+                    <h2 data-en="Required Documents" data-km="ឯកសារដែលត្រូវការ">Required Documents</h2>
                 </div>
-                <div class="feature-card">
-                    <div class="feature-icon">📅</div>
-                    <h3 data-en="Important Dates" data-km="កាលបរិច្ឆេទសំខាន់">Important Dates</h3>
-                    <p data-en="Application deadlines and enrollment periods" data-km="កាលបរិច្ឆេទផុតកំណត់ដាក់ពាក្យ និងរយៈពេលចុះឈ្មោះ">Application deadlines and enrollment periods</p>
+                <div class="documents-grid">
+                    <div class="document-category">
+                        <h4 data-en="Academic Records" data-km="កំណត់ត្រាសិក្សា">Academic Records</h4>
+                        <ul class="document-list">
+                            <li data-en="✓ Previous school transcripts" data-km="✓ ប្រតិដ្ឋភាពសាលាមុន">✓ Previous school transcripts</li>
+                            <li data-en="✓ Report cards (last 2 years)" data-km="✓ ប័ណ្ណពិន្ទុ (២ ឆ្នាំចុងក្រោយ)">✓ Report cards (last 2 years)</li>
+                            <li data-en="✓ Transfer certificate" data-km="✓ វិញ្ញាបនបត្រផ្ទេរ">✓ Transfer certificate</li>
+                        </ul>
+                    </div>
+                    <div class="document-category">
+                        <h4 data-en="Personal Documents" data-km="ឯកសារផ្ទាល់ខ្លួន">Personal Documents</h4>
+                        <ul class="document-list">
+                            <li data-en="✓ Birth certificate" data-km="✓ វិញ្ញាបនបត្រកំណើត">✓ Birth certificate</li>
+                            <li data-en="✓ National ID (if available)" data-km="✓ អត្តសញ្ញាណប័ណ្ណជាតិ (បើមាន)">✓ National ID (if available)</li>
+                            <li data-en="✓ Passport photos (4 copies)" data-km="✓ រូបថតអត្តសញ្ញាណប័ណ្ណ (៤ ច្បាប់)">✓ Passport photos (4 copies)</li>
+                        </ul>
+                    </div>
+                    <div class="document-category">
+                        <h4 data-en="Additional Requirements" data-km="តម្រូវការបន្ថែម">Additional Requirements</h4>
+                        <ul class="document-list">
+                            <li data-en="✓ Medical certificate" data-km="✓ វិញ្ញាបនបត្រសុខភាព">✓ Medical certificate</li>
+                            <li data-en="✓ Parent/Guardian ID" data-km="✓ អត្តសញ្ញាណប័ណ្ណឪពុកម្តាយ/អាណាព្យាបាល">✓ Parent/Guardian ID</li>
+                            <li data-en="✓ Application fee receipt" data-km="✓ បង្កាន់ដៃថ្លៃពាក្យសុំ">✓ Application fee receipt</li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="feature-card">
-                    <div class="feature-icon">💰</div>
-                    <h3 data-en="Tuition & Fees" data-km="ថ្លៃសិក្សា និងថ្លៃឈ្នួល">Tuition & Fees</h3>
-                    <p data-en="Affordable education with flexible payment options" data-km="អប់រំថ្លៃសមរម្យជាមួយជម្រើសបង់ប្រាក់អាចបត់បែនបាន">Affordable education with flexible payment options</p>
+                <div class="document-actions">
+                    <a href="#" class="document-btn" data-en="Download Application Form" data-km="ទាញយកទម្រង់ពាក្យសុំ">Download Application Form</a>
+                    <a href="#" class="document-btn" data-en="Download Checklist" data-km="ទាញយកបញ្ជីពិនិត្យ">Download Checklist</a>
+                </div>
+            </div>
+            
+            <!-- School Zone Map -->
+            <div id="admissions-zone" class="admissions-subsection">
+                <div class="section-header">
+                    <h2 data-en="School Zone & Eligibility" data-km="តំបន់សាលា និងសិទ្ធិចូលរៀន">School Zone & Eligibility</h2>
+                </div>
+                <div class="zone-content">
+                    <div class="zone-info">
+                        <h3 data-en="Eligibility Requirements" data-km="តម្រូវការសិទ្ធិចូលរៀន">Eligibility Requirements</h3>
+                        <ul class="eligibility-list">
+                            <li data-en="✓ Age: 12-18 years old" data-km="✓ អាយុ: ១២-១៨ ឆ្នាំ">✓ Age: 12-18 years old</li>
+                            <li data-en="✓ Completed Grade 6 or equivalent" data-km="✓ បញ្ចប់ថ្នាក់ទី៦ ឬស្មើ">✓ Completed Grade 6 or equivalent</li>
+                            <li data-en="✓ Residing in Takhmao or surrounding areas" data-km="✓ រស់នៅតាខ្មៅ ឬតំបន់ជុំវិញ">✓ Residing in Takhmao or surrounding areas</li>
+                            <li data-en="✓ Good academic standing" data-km="✓ ស្ថានភាពសិក្សាល្អ">✓ Good academic standing</li>
+                        </ul>
+                    </div>
+                    <div class="zone-map">
+                        <div class="map-placeholder">
+                            <div class="map-icon">🗺️</div>
+                            <h4 data-en="School Zone Map" data-km="ផែនទីតំបន់សាលា">School Zone Map</h4>
+                            <p data-en="Interactive map showing eligible areas for enrollment" data-km="ផែនទីអន្តរកម្មបង្ហាញតំបន់ដែលមានសិទ្ធិចូលរៀន">Interactive map showing eligible areas for enrollment</p>
+                            <a href="#" class="map-btn" data-en="View Full Map" data-km="មើលផែនទីពេញ">View Full Map</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- FAQ Section -->
+            <div id="admissions-faq" class="admissions-subsection">
+                <div class="section-header">
+                    <h2 data-en="Frequently Asked Questions" data-km="សំណួរដែលសួរញឹកញាប់">Frequently Asked Questions</h2>
+                </div>
+                <div class="admissions-faq">
+                    <div class="faq-item">
+                        <button class="faq-question" data-en="What is the application deadline?" data-km="ថ្ងៃផុតកំណត់ដាក់ពាក្យសុំគឺអ្វី?">What is the application deadline?</button>
+                        <div class="faq-answer">
+                            <p data-en="The application deadline is March 31st each year. Late applications may be considered on a case-by-case basis." data-km="ថ្ងៃផុតកំណត់ដាក់ពាក្យសុំគឺថ្ងៃទី ៣១ ខែមីនារៀងរាល់ឆ្នាំ។ ពាក្យសុំយឺតយ៉ាវអាចត្រូវបានពិចារណាតាមករណី។">The application deadline is March 31st each year. Late applications may be considered on a case-by-case basis.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question" data-en="What are the tuition fees?" data-km="ថ្លៃសិក្សាគឺប៉ុន្មាន?">What are the tuition fees?</button>
+                        <div class="faq-answer">
+                            <p data-en="As a public school, we do not charge tuition fees. There are only small fees for materials and activities." data-km="ជាសាលាសាធារណៈ យើងមិនគិតថ្លៃសិក្សាទេ។ មានតែថ្លៃតិចតួចសម្រាប់សម្ភារៈ និងសកម្មភាពប៉ុណ្ណោះ។">As a public school, we do not charge tuition fees. There are only small fees for materials and activities.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question" data-en="Can students from other provinces apply?" data-km="សិស្សពីខេត្តផ្សេងអាចដាក់ពាក្យសុំបានទេ?">Can students from other provinces apply?</button>
+                        <div class="faq-answer">
+                            <p data-en="Yes, students from other provinces can apply, but priority is given to local students. Additional documentation may be required." data-km="បាទ សិស្សពីខេត្តផ្សេងអាចដាក់ពាក្យសុំបាន ប៉ុន្តែអាទិភាពត្រូវបានផ្តល់ដល់សិស្សក្នុងតំបន់។ ឯកសារបន្ថែមអាចត្រូវបានទាមទារ។">Yes, students from other provinces can apply, but priority is given to local students. Additional documentation may be required.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question" data-en="What if I miss the application deadline?" data-km="ចុះបើខ្ញុំខកថ្ងៃផុតកំណត់ដាក់ពាក្យសុំ?">What if I miss the application deadline?</button>
+                        <div class="faq-answer">
+                            <p data-en="Contact our admissions office immediately. We may have a waiting list or consider late applications if spaces are available." data-km="ទាក់ទងការិយាល័យចុះឈ្មោះរបស់យើងភ្លាម។ យើងអាចមានបញ្ជីរង់ចាំ ឬពិចារណាពាក្យសុំយឺតយ៉ាវបើមានកន្លែងទំនេរ។">Contact our admissions office immediately. We may have a waiting list or consider late applications if spaces are available.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Plan a Visit -->
+            <div id="admissions-visit" class="admissions-subsection">
+                <div class="section-header">
+                    <h2 data-en="Plan a Visit" data-km="រៀបចំការមកទស្សនា">Plan a Visit</h2>
+                    <p data-en="Schedule a school tour to see our facilities and meet our staff" data-km="កាលបរិច្ឆេទទស្សនាសាលាដើម្បីមើលសម្ភារៈ និងជួបជាមួយបុគ្គលិករបស់យើង">Schedule a school tour to see our facilities and meet our staff</p>
+                </div>
+                <div class="visit-content">
+                    <div class="visit-info">
+                        <h3 data-en="School Tour Schedule" data-km="កាលបរិច្ឆេទទស្សនាសាលា">School Tour Schedule</h3>
+                        <div class="tour-schedule">
+                            <div class="schedule-item">
+                                <span class="schedule-day" data-en="Monday - Friday" data-km="ច័ន្ទ - សុក្រ">Monday - Friday</span>
+                                <span class="schedule-time" data-en="9:00 AM - 3:00 PM" data-km="៩:០០ ព្រឹក - ៣:០០ ល្ងាច">9:00 AM - 3:00 PM</span>
+                            </div>
+                            <div class="schedule-item">
+                                <span class="schedule-day" data-en="Saturday" data-km="សៅរ៍">Saturday</span>
+                                <span class="schedule-time" data-en="9:00 AM - 12:00 PM" data-km="៩:០០ ព្រឹក - ១២:០០ ថ្ងៃត្រង់">9:00 AM - 12:00 PM</span>
+                            </div>
+                        </div>
+                        <div class="visit-contact">
+                            <h4 data-en="Contact Information" data-km="ព័ត៌មានទាក់ទង">Contact Information</h4>
+                            <p data-en="Phone: +855 23 123 456" data-km="ទូរស័ព្ទ: +៨៥៥ ២៣ ១២៣ ៤៥៦">Phone: +855 23 123 456</p>
+                            <p data-en="Email: admissions@hunsensereypheap.edu.kh" data-km="អ៊ីមែល: admissions@hunsensereypheap.edu.kh">Email: admissions@hunsensereypheap.edu.kh</p>
+                        </div>
+                    </div>
+                    <div class="visit-form">
+                        <h3 data-en="Schedule Your Visit" data-km="កាលបរិច្ឆេទការមកទស្សនារបស់អ្នក">Schedule Your Visit</h3>
+                        <form class="tour-form">
+                            <div class="form-group">
+                                <label for="visitor-name" data-en="Full Name" data-km="ឈ្មោះពេញ">Full Name</label>
+                                <input type="text" id="visitor-name" name="visitor-name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="visitor-email" data-en="Email Address" data-km="អាសយដ្ឋានអ៊ីមែល">Email Address</label>
+                                <input type="email" id="visitor-email" name="visitor-email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="visitor-phone" data-en="Phone Number" data-km="លេខទូរស័ព្ទ">Phone Number</label>
+                                <input type="tel" id="visitor-phone" name="visitor-phone" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="visit-date" data-en="Preferred Date" data-km="កាលបរិច្ឆេទចូលចិត្ត">Preferred Date</label>
+                                <input type="date" id="visit-date" name="visit-date" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="visit-time" data-en="Preferred Time" data-km="ពេលវេលាចូលចិត្ត">Preferred Time</label>
+                                <select id="visit-time" name="visit-time" required>
+                                    <option value="" data-en="Select time" data-km="ជ្រើសរើសពេលវេលា">Select time</option>
+                                    <option value="9:00" data-en="9:00 AM" data-km="៩:០០ ព្រឹក">9:00 AM</option>
+                                    <option value="10:00" data-en="10:00 AM" data-km="១០:០០ ព្រឹក">10:00 AM</option>
+                                    <option value="11:00" data-en="11:00 AM" data-km="១១:០០ ព្រឹក">11:00 AM</option>
+                                    <option value="14:00" data-en="2:00 PM" data-km="២:០០ ល្ងាច">2:00 PM</option>
+                                    <option value="15:00" data-en="3:00 PM" data-km="៣:០០ ល្ងាច">3:00 PM</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="visit-message" data-en="Additional Notes" data-km="កំណត់ចំណាំបន្ថែម">Additional Notes</label>
+                                <textarea id="visit-message" name="visit-message" rows="3"></textarea>
+                            </div>
+                            <button type="submit" class="form-submit" data-en="Schedule Visit" data-km="កាលបរិច្ឆេទទស្សនា">Schedule Visit</button>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Student Life Section -->
-    <section class="section" id="student">
-        <div class="section-content">
-            <div class="section-header">
-                <h2 data-en="Student Life" data-km="ជីវិតសិស្ស">Student Life</h2>
-                <p data-en="Rich experiences beyond the classroom" data-km="បទពិសោធន៍សម្បូរបែបហួសពីបន្ទប់រៀន">Rich experiences beyond the classroom</p>
+    <section id="student-life" class="student-life">
+        <div class="container">
+            <!-- Clubs & Activities -->
+            <div id="student-clubs" class="student-life-subsection">
+                <div class="section-header">
+                    <h2 data-en="Clubs & Activities" data-km="ក្លឹប និងសកម្មភាព">Clubs & Activities</h2>
+                    <p data-en="Join clubs and develop your interests" data-km="ចូលរួមក្លឹប និងអភិវឌ្ឍចំណូលចិត្តរបស់អ្នក">Join clubs and develop your interests</p>
+                </div>
+                <div class="clubs-grid">
+                    <div class="club-card">
+                        <div class="club-icon">🏥</div>
+                        <h4 data-en="Red Cross" data-km="កាកបាទក្រហម">Red Cross</h4>
+                        <p data-en="Community service and first aid training" data-km="សេវាកម្មសហគមន៍ និងការបណ្តុះបណ្តាលជំនួយដំបូង">Community service and first aid training</p>
+                        <span class="club-status" data-en="Open for enrollment" data-km="បើកចុះឈ្មោះ">Open for enrollment</span>
+                    </div>
+                    <div class="club-card">
+                        <div class="club-icon">💻</div>
+                        <h4 data-en="ICT Club" data-km="ក្លឹបព័ត៌មានវិទ្យា">ICT Club</h4>
+                        <p data-en="Programming, web development, and technology" data-km="កម្មវិធី ការអភិវឌ្ឍគេហទំព័រ និងបច្ចេកវិទ្យា">Programming, web development, and technology</p>
+                        <span class="club-status" data-en="Open for enrollment" data-km="បើកចុះឈ្មោះ">Open for enrollment</span>
+                    </div>
+                    <div class="club-card">
+                        <div class="club-icon">🎤</div>
+                        <h4 data-en="Debate Club" data-km="ក្លឹបជជែក">Debate Club</h4>
+                        <p data-en="Public speaking and critical thinking" data-km="ការនិយាយសាធារណៈ និងការគិតវិជ្ជមាន">Public speaking and critical thinking</p>
+                        <span class="club-status" data-en="Open for enrollment" data-km="បើកចុះឈ្មោះ">Open for enrollment</span>
+                    </div>
+                    <div class="club-card">
+                        <div class="club-icon">⚽</div>
+                        <h4 data-en="Sports Club" data-km="ក្លឹបកីឡា">Sports Club</h4>
+                        <p data-en="Football, basketball, volleyball, and more" data-km="បាល់ទាត់ បាល់ទះ បាល់ហែល និងច្រើនទៀត">Football, basketball, volleyball, and more</p>
+                        <span class="club-status" data-en="Open for enrollment" data-km="បើកចុះឈ្មោះ">Open for enrollment</span>
+                    </div>
+                    <div class="club-card">
+                        <div class="club-icon">🎨</div>
+                        <h4 data-en="Arts Club" data-km="ក្លឹបសិល្បៈ">Arts Club</h4>
+                        <p data-en="Drawing, painting, music, and creative expression" data-km="គំនូរ ការគូររូប តន្ត្រី និងការបង្ហាញច្នៃប្រឌិត">Drawing, painting, music, and creative expression</p>
+                        <span class="club-status" data-en="Open for enrollment" data-km="បើកចុះឈ្មោះ">Open for enrollment</span>
+                    </div>
+                    <div class="club-card">
+                        <div class="club-icon">📚</div>
+                        <h4 data-en="Reading Club" data-km="ក្លឹបអាន">Reading Club</h4>
+                        <p data-en="Book discussions and literary analysis" data-km="ការពិភាក្សាសៀវភៅ និងការវិភាគអក្សរសាស្ត្រ">Book discussions and literary analysis</p>
+                        <span class="club-status" data-en="Open for enrollment" data-km="បើកចុះឈ្មោះ">Open for enrollment</span>
+                    </div>
+                </div>
             </div>
-            <div class="features-grid">
-                <div class="feature-card">
-                    <div class="feature-icon">🎭</div>
-                    <h3 data-en="Clubs & Activities" data-km="ក្លឹប និងសកម្មភាព">Clubs & Activities</h3>
-                    <p data-en="30+ clubs including arts, sports, and academic societies" data-km="ក្លឹប ៣០+ រួមមានសិល្បៈ កីឡា និងសង្គមសិក្សា">30+ clubs including arts, sports, and academic societies</p>
+            
+            <!-- Student Council -->
+            <div id="student-council" class="student-life-subsection">
+                <div class="section-header">
+                    <h2 data-en="Student Council" data-km="ក្រុមប្រឹក្សាសិស្ស">Student Council</h2>
+                    <p data-en="Student leadership and representation" data-km="ភាពជាអ្នកដឹកនាំសិស្ស និងតំណាង">Student leadership and representation</p>
                 </div>
-                <div class="feature-card">
-                    <div class="feature-icon">🏆</div>
-                    <h3 data-en="Competitions" data-km="ការប្រកួត">Competitions</h3>
-                    <p data-en="Academic and extracurricular competitions" data-km="ការប្រកួតសិក្សា និងការប្រកួតបន្ថែម">Academic and extracurricular competitions</p>
+                <div class="council-info">
+                    <div class="council-overview">
+                        <h3 data-en="Council Structure" data-km="រចនាសម្ព័ន្ធក្រុមប្រឹក្សា">Council Structure</h3>
+                        <p data-en="The Student Council represents student interests and organizes school events. Members are elected annually by their peers." data-km="ក្រុមប្រឹក្សាសិស្សតំណាងឱ្យផលប្រយោជន៍សិស្ស និងរៀបចំព្រឹត្តិការណ៍សាលា។ សមាជិកត្រូវបានជ្រើសរើសរៀងរាល់ឆ្នាំដោយមិត្តរួមថ្នាក់។">The Student Council represents student interests and organizes school events. Members are elected annually by their peers.</p>
+                    </div>
+                    <div class="council-positions">
+                        <h3 data-en="Council Positions" data-km="មុខតំណែងក្រុមប្រឹក្សា">Council Positions</h3>
+                        <div class="positions-grid">
+                            <div class="position-card">
+                                <h4 data-en="President" data-km="ប្រធាន">President</h4>
+                                <p data-en="Leads council meetings and represents students" data-km="ដឹកនាំការប្រជុំក្រុមប្រឹក្សា និងតំណាងសិស្ស">Leads council meetings and represents students</p>
+                            </div>
+                            <div class="position-card">
+                                <h4 data-en="Vice President" data-km="អនុប្រធាន">Vice President</h4>
+                                <p data-en="Assists president and manages activities" data-km="ជួយប្រធាន និងគ្រប់គ្រងសកម្មភាព">Assists president and manages activities</p>
+                            </div>
+                            <div class="position-card">
+                                <h4 data-en="Secretary" data-km="លេខាធិការ">Secretary</h4>
+                                <p data-en="Records meetings and manages communications" data-km="កត់ត្រាការប្រជុំ និងគ្រប់គ្រងទំនាក់ទំនង">Records meetings and manages communications</p>
+                            </div>
+                            <div class="position-card">
+                                <h4 data-en="Treasurer" data-km="អគ្គិសនីករ">Treasurer</h4>
+                                <p data-en="Manages council finances and budgets" data-km="គ្រប់គ្រងហិរញ្ញវត្ថុ និងថវិកាក្រុមប្រឹក្សា">Manages council finances and budgets</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="feature-card">
-                    <div class="feature-icon">🤝</div>
-                    <h3 data-en="Community Service" data-km="សេវាកម្មសហគមន៍">Community Service</h3>
-                    <p data-en="Opportunities to give back to the community" data-km="ឱកាសដើម្បីផ្តល់ជូនដល់សហគមន៍">Opportunities to give back to the community</p>
+            </div>
+            
+            <!-- Code of Conduct & Rules -->
+            <div id="student-rules" class="student-life-subsection">
+                <div class="section-header">
+                    <h2 data-en="Code of Conduct & Rules" data-km="ក្រមសីលធម៌ និងច្បាប់">Code of Conduct & Rules</h2>
+                </div>
+                <div class="rules-content">
+                    <div class="rules-overview">
+                        <h3 data-en="School Rules" data-km="ច្បាប់សាលា">School Rules</h3>
+                        <ul class="rules-list">
+                            <li data-en="✓ Attend all classes regularly and punctually" data-km="✓ ចូលរៀនរៀងរាល់ថ្ងៃ និងមានវិន័យ">✓ Attend all classes regularly and punctually</li>
+                            <li data-en="✓ Respect teachers, staff, and fellow students" data-km="✓ គោរពគ្រូ បុគ្គលិក និងមិត្តរួមថ្នាក់">✓ Respect teachers, staff, and fellow students</li>
+                            <li data-en="✓ Wear school uniform properly" data-km="✓ ស្លៀកពាក់ឯកសណ្ឋានសាលាឱ្យត្រឹមត្រូវ">✓ Wear school uniform properly</li>
+                            <li data-en="✓ Maintain cleanliness and order" data-km="✓ រក្សាភាពស្អាត និងរបរបាត">✓ Maintain cleanliness and order</li>
+                            <li data-en="✓ Follow safety guidelines" data-km="✓ អនុវត្តគោលការណ៍សុវត្ថិភាព">✓ Follow safety guidelines</li>
+                        </ul>
+                    </div>
+                    <div class="rules-download">
+                        <h3 data-en="Student Handbook" data-km="សៀវភៅណែនាំសិស្ស">Student Handbook</h3>
+                        <p data-en="Download the complete student handbook for detailed rules and policies." data-km="ទាញយកសៀវភៅណែនាំសិស្សពេញលេញសម្រាប់ច្បាប់ និងគោលនយោបាយលម្អិត។">Download the complete student handbook for detailed rules and policies.</p>
+                        <a href="#" class="handbook-btn" data-en="Download Handbook" data-km="ទាញយកសៀវភៅណែនាំ">Download Handbook</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Events & Traditions -->
+            <div id="student-traditions" class="student-life-subsection">
+                <div class="section-header">
+                    <h2 data-en="Events & Traditions" data-km="ព្រឹត្តិការណ៍ និងប្រពៃណី">Events & Traditions</h2>
+                </div>
+                <div class="events-grid">
+                    <div class="event-card">
+                        <div class="event-image">🎓</div>
+                        <h4 data-en="Graduation Ceremony" data-km="ពិធីបញ្ចប់ការសិក្សា">Graduation Ceremony</h4>
+                        <p data-en="Annual celebration of student achievements" data-km="ពិធីបុណ្យប្រចាំឆ្នាំសម្រាប់សម្រេចបានរបស់សិស្ស">Annual celebration of student achievements</p>
+                        <span class="event-date" data-en="August" data-km="សីហា">August</span>
+                    </div>
+                    <div class="event-card">
+                        <div class="event-image">🎉</div>
+                        <h4 data-en="School Festival" data-km="ពិធីបុណ្យសាលា">School Festival</h4>
+                        <p data-en="Cultural performances and student showcases" data-km="ការសម្តែងវប្បធម៌ និងការបង្ហាញសិស្ស">Cultural performances and student showcases</p>
+                        <span class="event-date" data-en="March" data-km="មីនា">March</span>
+                    </div>
+                    <div class="event-card">
+                        <div class="event-image">🏃</div>
+                        <h4 data-en="Sports Day" data-km="ថ្ងៃកីឡា">Sports Day</h4>
+                        <p data-en="Annual sports competition and activities" data-km="ការប្រកួតកីឡាប្រចាំឆ្នាំ និងសកម្មភាព">Annual sports competition and activities</p>
+                        <span class="event-date" data-en="November" data-km="វិច្ឆិកា">November</span>
+                    </div>
+                    <div class="event-card">
+                        <div class="event-image">📚</div>
+                        <h4 data-en="Reading Week" data-km="សប្តាហ៍អាន">Reading Week</h4>
+                        <p data-en="Promoting literacy and love for reading" data-km="លើកកម្ពស់អក្សរសាស្ត្រ និងស្នេហាការអាន">Promoting literacy and love for reading</p>
+                        <span class="event-date" data-en="April" data-km="មេសា">April</span>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
-
+    
     <!-- News Section -->
     <section class="section" id="news">
         <div class="section-content">
@@ -350,33 +1185,248 @@
     </section>
     
     <!-- Contact Section -->
-    <section class="section" id="contact">
-        <div class="section-content">
+    <section id="contact" class="contact">
+        <div class="container">
             <div class="section-header">
                 <h2 data-en="Contact Us" data-km="ទំនាក់ទំនងជាមួយយើង">Contact Us</h2>
                 <p data-en="Get in touch with us for more information" data-km="ទាក់ទងមកយើងសម្រាប់ព័ត៌មានបន្ថែម">Get in touch with us for more information</p>
             </div>
-            <div class="features-grid">
-                <div class="feature-card">
-                    <div class="feature-icon">📞</div>
-                    <h3 data-en="Phone" data-km="ទូរស័ព្ទ">Phone</h3>
-                    <p data-en="+855 23 XXX XXX" data-km="+855 23 XXX XXX">+855 23 XXX XXX</p>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <div class="contact-icon">📞</div>
+                        <h3 data-en="Phone" data-km="ទូរស័ព្ទ">Phone</h3>
+                        <p data-en="+855 23 123 456" data-km="+៨៥៥ ២៣ ១២៣ ៤៥៦">+855 23 123 456</p>
+                        <a href="tel:+85523123456" class="contact-link" data-en="Call Now" data-km="ទូរស័ព្ទឥឡូវ">Call Now</a>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">📧</div>
+                        <h3 data-en="Email" data-km="អ៊ីមែល">Email</h3>
+                        <p data-en="info@hunsensereypheap.edu.kh" data-km="info@hunsensereypheap.edu.kh">info@hunsensereypheap.edu.kh</p>
+                        <a href="mailto:info@hunsensereypheap.edu.kh" class="contact-link" data-en="Send Email" data-km="ផ្ញើអ៊ីមែល">Send Email</a>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">📍</div>
+                        <h3 data-en="Address" data-km="អាសយដ្ឋាន">Address</h3>
+                        <p data-en="Takhmao City, Kandal Province, Cambodia" data-km="ក្រុងតាខ្មៅ ខេត្តកណ្តាល កម្ពុជា">Takhmao City, Kandal Province, Cambodia</p>
+                        <a href="#" class="contact-link" data-en="Get Directions" data-km="ទទួលបានទិសដៅ">Get Directions</a>
+                    </div>
                 </div>
-                <div class="feature-card">
-                    <div class="feature-icon">📧</div>
-                    <h3 data-en="Email" data-km="អ៊ីមែល">Email</h3>
-                    <p data-en="info@hssphighschool.edu.kh" data-km="info@hssphighschool.edu.kh">info@hssphighschool.edu.kh</p>
+                <div class="contact-map">
+                    <div class="map-container">
+                        <div class="map-placeholder">
+                            <div class="map-icon">🗺️</div>
+                            <h4 data-en="Interactive Map" data-km="ផែនទីអន្តរកម្ម">Interactive Map</h4>
+                            <p data-en="Find us easily with our interactive map" data-km="រកយើងយ៉ាងងាយស្រួលជាមួយផែនទីអន្តរកម្មរបស់យើង">Find us easily with our interactive map</p>
+                            <a href="#" class="map-btn" data-en="Open in Maps" data-km="បើកក្នុងផែនទី">Open in Maps</a>
+                        </div>
+                    </div>
                 </div>
-                <div class="feature-card">
-                    <div class="feature-icon">📍</div>
-                    <h3 data-en="Address" data-km="អាសយដ្ឋាន">Address</h3>
-                    <p data-en="Takhmao City, Kandal Province" data-km="ក្រុងត្រពាំងព្រីង ខេត្តកណ្តាល">Takhmao City, Kandal Province</p>
+            </div>
+            <div class="contact-form-section">
+                <h3 data-en="Send us a Message" data-km="ផ្ញើសារមកយើង">Send us a Message</h3>
+                <form class="contact-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="contact-name" data-en="Full Name" data-km="ឈ្មោះពេញ">Full Name</label>
+                            <input type="text" id="contact-name" name="contact-name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="contact-email" data-en="Email Address" data-km="អាសយដ្ឋានអ៊ីមែល">Email Address</label>
+                            <input type="email" id="contact-email" name="contact-email" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="contact-phone" data-en="Phone Number" data-km="លេខទូរស័ព្ទ">Phone Number</label>
+                            <input type="tel" id="contact-phone" name="contact-phone">
+                        </div>
+                        <div class="form-group">
+                            <label for="contact-subject" data-en="Subject" data-km="ប្រធានបទ">Subject</label>
+                            <select id="contact-subject" name="contact-subject" required>
+                                <option value="" data-en="Select a subject" data-km="ជ្រើសរើសប្រធានបទ">Select a subject</option>
+                                <option value="admission" data-en="Admission Inquiry" data-km="សំណួរចុះឈ្មោះ">Admission Inquiry</option>
+                                <option value="academic" data-en="Academic Information" data-km="ព័ត៌មានសិក្សា">Academic Information</option>
+                                <option value="general" data-en="General Inquiry" data-km="សំណួរទូទៅ">General Inquiry</option>
+                                <option value="other" data-en="Other" data-km="ផ្សេងទៀត">Other</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="contact-message" data-en="Message" data-km="សារ">Message</label>
+                        <textarea id="contact-message" name="contact-message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="form-submit" data-en="Send Message" data-km="ផ្ញើសារ">Send Message</button>
+                </form>
+        </div>
+    </section>
+
+    <!-- Parents Section -->
+    <section id="parents" class="parents">
+        <div class="container">
+            <h2 data-en="Parents" data-km="ឪពុកម្តាយ">Parents</h2>
+            
+            <!-- Parent Resources -->
+            <div id="parents-resources" class="parents-subsection">
+                <h3 data-en="Parent Resources" data-km="ធនធានសម្រាប់ឪពុកម្តាយ">Parent Resources</h3>
+                <div class="resources-grid">
+                    <div class="resource-card">
+                        <div class="resource-icon">📚</div>
+                        <h4 data-en="Academic Calendar" data-km="ប្រតិទិនសិក្សា">Academic Calendar</h4>
+                        <p data-en="Important dates and school events" data-km="កាលបរិច្ឆេទសំខាន់ និងព្រឹត្តិការណ៍សាលា">Important dates and school events</p>
+                        <a href="#" class="resource-link" data-en="View Calendar" data-km="មើលប្រតិទិន">View Calendar</a>
+                    </div>
+                    
+                    <div class="resource-card">
+                        <div class="resource-icon">📋</div>
+                        <h4 data-en="Parent Handbook" data-km="សៀវភៅណែនាំឪពុកម្តាយ">Parent Handbook</h4>
+                        <p data-en="School policies and procedures" data-km="គោលនយោបាយ និងនីតិវិធីសាលា">School policies and procedures</p>
+                        <a href="#" class="resource-link" data-en="Download PDF" data-km="ទាញយក PDF">Download PDF</a>
+                    </div>
+                    
+                    <div class="resource-card">
+                        <div class="resource-icon">💬</div>
+                        <h4 data-en="Communication" data-km="ការទំនាក់ទំនង">Communication</h4>
+                        <p data-en="Stay connected with teachers and staff" data-km="រក្សាការទំនាក់ទំនងជាមួយគ្រូ និងបុគ្គលិក">Stay connected with teachers and staff</p>
+                        <a href="#contact" class="resource-link" data-en="Contact Us" data-km="ទំនាក់ទំនង">Contact Us</a>
+                    </div>
+                    
+                    <div class="resource-card">
+                        <div class="resource-icon">💰</div>
+                        <h4 data-en="Fees & Payments" data-km="ថ្លៃសិក្សា និងការទូទាត់">Fees & Payments</h4>
+                        <p data-en="School fees and payment information" data-km="ថ្លៃសិក្សា និងព័ត៌មានការទូទាត់">School fees and payment information</p>
+                        <a href="#" class="resource-link" data-en="View Details" data-km="មើលលម្អិត">View Details</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Communication Guidelines -->
+            <div id="parents-communication" class="parents-subsection">
+                <h3 data-en="Communication Guidelines" data-km="គោលការណ៍ការទំនាក់ទំនង">Communication Guidelines</h3>
+                <div class="communication-content">
+                    <div class="guidelines-grid">
+                        <div class="guideline-card">
+                            <h4 data-en="Teacher Meetings" data-km="ការប្រជុំគ្រូ">Teacher Meetings</h4>
+                            <p data-en="Schedule regular meetings with teachers to discuss your child's progress" data-km="កាលវិភាគការប្រជុំជាប្រចាំជាមួយគ្រូដើម្បីពិភាក្សាអំពីវឌ្ឍនភាពរបស់កូនអ្នក">Schedule regular meetings with teachers to discuss your child's progress</p>
+                        </div>
+                        
+                        <div class="guideline-card">
+                            <h4 data-en="School Events" data-km="ព្រឹត្តិការណ៍សាលា">School Events</h4>
+                            <p data-en="Participate in parent-teacher conferences and school activities" data-km="ចូលរួមក្នុងការប្រជុំឪពុកម្តាយ-គ្រូ និងសកម្មភាពសាលា">Participate in parent-teacher conferences and school activities</p>
+                        </div>
+                        
+                        <div class="guideline-card">
+                            <h4 data-en="Emergency Contact" data-km="ទំនាក់ទំនងបន្ទាន់">Emergency Contact</h4>
+                            <p data-en="Keep your contact information updated for emergency situations" data-km="រក្សាព័ត៌មានទំនាក់ទំនងរបស់អ្នកឱ្យទាន់សម័យសម្រាប់ស្ថានការណ៍បន្ទាន់">Keep your contact information updated for emergency situations</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Parent Portal -->
+            <div id="parents-portal" class="parents-subsection">
+                <h3 data-en="Parent Portal" data-km="ផ្ទះឪពុកម្តាយ">Parent Portal</h3>
+                <div class="portal-content">
+                    <div class="portal-info">
+                        <h4 data-en="Online Access" data-km="ការចូលប្រើអនឡាញ">Online Access</h4>
+                        <p data-en="Access your child's academic records, attendance, and school announcements online" data-km="ចូលប្រើកំណត់ត្រាសិក្សា ការចូលរៀន និងប្រកាសសាលារបស់កូនអ្នកតាមអនឡាញ">Access your child's academic records, attendance, and school announcements online</p>
+                        <a href="#" class="portal-btn" data-en="Login to Portal" data-km="ចូលប្រើផ្ទះ">Login to Portal</a>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Map Section -->
+    <!-- Alumni Section -->
+    <section id="alumni" class="alumni">
+        <div class="container">
+            <h2 data-en="Alumni" data-km="សិស្សចាស់">Alumni</h2>
+            
+            <!-- Alumni Stories -->
+            <div id="alumni-stories" class="alumni-subsection">
+                <h3 data-en="Alumni Success Stories" data-km="រឿងរ៉ាវជោគជ័យរបស់សិស្សចាស់">Alumni Success Stories</h3>
+                <div class="stories-grid">
+                    <div class="story-card">
+                        <div class="story-image">
+                            <div class="placeholder-img">👨‍💼</div>
+                        </div>
+                        <div class="story-content">
+                            <h4 data-en="Sophea Chen" data-km="សុភា ចេន">Sophea Chen</h4>
+                            <p class="story-title" data-en="Software Engineer at Google" data-km="វិស្វករកម្មវិធីនៅ Google">Software Engineer at Google</p>
+                            <p class="story-quote" data-en="Hun Sen Serey Pheap gave me the foundation to pursue my dreams in technology" data-km="វិទ្យាល័យ ហ៊ុន សែន សិរីភាព បានផ្តល់មូលដ្ឋានដល់ខ្ញុំក្នុងការតាមដានក្តីសុបិន្តរបស់ខ្ញុំក្នុងបច្ចេកវិទ្យា">"Hun Sen Serey Pheap gave me the foundation to pursue my dreams in technology"</p>
+                        </div>
+                    </div>
+                    
+                    <div class="story-card">
+                        <div class="story-image">
+                            <div class="placeholder-img">👩‍⚕️</div>
+                        </div>
+                        <div class="story-content">
+                            <h4 data-en="Ratanak Meas" data-km="រតនៈ មាស">Ratanak Meas</h4>
+                            <p class="story-title" data-en="Doctor at Calmette Hospital" data-km="វេជ្ជបណ្ឌិតនៅមន្ទីរពេទ្យកាលម៉ែត">Doctor at Calmette Hospital</p>
+                            <p class="story-quote" data-en="The discipline and academic excellence I learned here shaped my medical career" data-km="វិន័យ និងភាពល្អឥតខ្ចោះក្នុងការសិក្សាដែលខ្ញុំបានរៀននៅទីនេះ បានជួយឱ្យខ្ញុំមានអាជីពវេជ្ជសាស្ត្រ">"The discipline and academic excellence I learned here shaped my medical career"</p>
+                        </div>
+                    </div>
+                    
+                    <div class="story-card">
+                        <div class="story-image">
+                            <div class="placeholder-img">👨‍🎓</div>
+                        </div>
+                        <div class="story-content">
+                            <h4 data-en="Sokha Lim" data-km="សុខា លីម">Sokha Lim</h4>
+                            <p class="story-title" data-en="University Professor" data-km="អ្នកវិទ្យាសាស្ត្រសកលវិទ្យាល័យ">University Professor</p>
+                            <p class="story-quote" data-en="My teachers here inspired me to become an educator and give back to society" data-km="គ្រូរបស់ខ្ញុំនៅទីនេះបានជំរុញខ្ញុំឱ្យក្លាយជាអ្នកអប់រំ និងជួយសង្គម">"My teachers here inspired me to become an educator and give back to society"</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Give Back -->
+            <div id="alumni-giveback" class="alumni-subsection">
+                <h3 data-en="Give Back" data-km="ជួយសង្គម">Give Back</h3>
+                <div class="giveback-content">
+                    <div class="giveback-grid">
+                        <div class="giveback-card">
+                            <div class="giveback-icon">🎓</div>
+                            <h4 data-en="Mentorship Program" data-km="កម្មវិធីណែនាំ">Mentorship Program</h4>
+                            <p data-en="Mentor current students and share your experience" data-km="ណែនាំសិស្សបច្ចុប្បន្ន និងចែករំលែកបទពិសោធន៍របស់អ្នក">Mentor current students and share your experience</p>
+                            <a href="#contact" class="giveback-btn" data-en="Join Program" data-km="ចូលរួម">Join Program</a>
+                        </div>
+                        
+                        <div class="giveback-card">
+                            <div class="giveback-icon">💰</div>
+                            <h4 data-en="Scholarship Fund" data-km="មូលនិធិអាហារូបករណ៍">Scholarship Fund</h4>
+                            <p data-en="Support deserving students with financial assistance" data-km="ជួយសិស្សដែលសមនឹងបានទទួលជំនួយហិរញ្ញវត្ថុ">Support deserving students with financial assistance</p>
+                            <a href="#contact" class="giveback-btn" data-en="Donate Now" data-km="វិភាគទានឥឡូវ">Donate Now</a>
+                        </div>
+                        
+                        <div class="giveback-card">
+                            <div class="giveback-icon">🏫</div>
+                            <h4 data-en="School Development" data-km="ការអភិវឌ្ឍសាលា">School Development</h4>
+                            <p data-en="Help improve school facilities and programs" data-km="ជួយកែលម្អកន្លែង និងកម្មវិធីសាលា">Help improve school facilities and programs</p>
+                            <a href="#contact" class="giveback-btn" data-en="Get Involved" data-km="ចូលរួម">Get Involved</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Alumni Network -->
+            <div id="alumni-network" class="alumni-subsection">
+                <h3 data-en="Alumni Network" data-km="បណ្តាញសិស្សចាស់">Alumni Network</h3>
+                <div class="network-content">
+                    <div class="network-info">
+                        <h4 data-en="Stay Connected" data-km="រក្សាការទំនាក់ទំនង">Stay Connected</h4>
+                        <p data-en="Join our alumni network to stay in touch with classmates and school updates" data-km="ចូលរួមបណ្តាញសិស្សចាស់របស់យើងដើម្បីរក្សាការទំនាក់ទំនងជាមួយមិត្តរួមថ្នាក់ និងព័ត៌មានសាលា">Join our alumni network to stay in touch with classmates and school updates</p>
+                        <div class="network-links">
+                            <a href="#" class="network-link" data-en="Facebook Group" data-km="ក្រុម Facebook">Facebook Group</a>
+                            <a href="#" class="network-link" data-en="LinkedIn Network" data-km="បណ្តាញ LinkedIn">LinkedIn Network</a>
+                            <a href="#contact" class="network-link" data-en="Contact Alumni Office" data-km="ទំនាក់ទំនងការិយាល័យសិស្សចាស់">Contact Alumni Office</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <section class="section">
         <div class="section-content">
             <div class="section-header">

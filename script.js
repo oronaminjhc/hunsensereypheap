@@ -11,6 +11,8 @@ class LanguageManager {
                 'student': 'Student Life',
                 'news': 'News',
                 'contact': 'Contact',
+                'parents': 'Parents',
+                'alumni': 'Alumni',
                 
                 // Hero section
                 'hero-title': 'Learning today leading tomorrow',
@@ -97,6 +99,8 @@ class LanguageManager {
                 'student': 'ជីវិតសិស្ស',
                 'news': 'ព័ត៌មាន',
                 'contact': 'ទំនាក់ទំនង',
+                'parents': 'ឪពុកម្តាយ',
+                'alumni': 'សិស្សចាស់',
                 
                 // Hero section
                 'hero-title': 'រៀនថ្ងៃនេះ ដឹកនាំថ្ងៃស្អែក',
@@ -349,6 +353,168 @@ class AnimationManager {
     }
 }
 
+// Search functionality
+// Academics Tab Manager
+class AcademicsTabManager {
+    constructor() {
+        this.tabButtons = document.querySelectorAll('.tab-btn');
+        this.tabPanels = document.querySelectorAll('.tab-panel');
+        this.init();
+    }
+    
+    init() {
+        this.tabButtons.forEach(button => {
+            button.addEventListener('click', (e) => this.switchTab(e));
+        });
+    }
+    
+    switchTab(e) {
+        const clickedButton = e.target;
+        const targetGrade = clickedButton.getAttribute('data-grade');
+        
+        // Remove active class from all buttons and panels
+        this.tabButtons.forEach(btn => btn.classList.remove('active'));
+        this.tabPanels.forEach(panel => panel.classList.remove('active'));
+        
+        // Add active class to clicked button
+        clickedButton.classList.add('active');
+        
+        // Show corresponding panel
+        const targetPanel = document.getElementById(`grade-${targetGrade}`);
+        if (targetPanel) {
+            targetPanel.classList.add('active');
+        }
+    }
+}
+
+// FAQ Accordion Manager
+class FAQManager {
+    constructor() {
+        this.faqQuestions = document.querySelectorAll('.faq-question');
+        this.init();
+    }
+    
+    init() {
+        this.faqQuestions.forEach(question => {
+            question.addEventListener('click', (e) => this.toggleFAQ(e));
+        });
+    }
+    
+    toggleFAQ(e) {
+        const question = e.target;
+        const answer = question.nextElementSibling;
+        
+        // Close all other FAQs
+        this.faqQuestions.forEach(q => {
+            if (q !== question) {
+                q.nextElementSibling.classList.remove('active');
+            }
+        });
+        
+        // Toggle current FAQ
+        answer.classList.toggle('active');
+    }
+}
+
+class SearchManager {
+    constructor() {
+        this.searchOverlay = document.getElementById('search-overlay');
+        this.searchBtn = document.getElementById('search-btn');
+        this.searchClose = document.getElementById('search-close');
+        this.searchInput = document.getElementById('search-input');
+        this.searchSubmit = document.getElementById('search-submit');
+        this.searchResults = document.getElementById('search-results');
+        this.init();
+    }
+    
+    init() {
+        if (this.searchBtn) {
+            this.searchBtn.addEventListener('click', () => this.openSearch());
+        }
+        if (this.searchClose) {
+            this.searchClose.addEventListener('click', () => this.closeSearch());
+        }
+        if (this.searchSubmit) {
+            this.searchSubmit.addEventListener('click', () => this.performSearch());
+        }
+        if (this.searchInput) {
+            this.searchInput.addEventListener('keypress', (e) => {
+                if (e.key === 'Enter') {
+                    this.performSearch();
+                }
+            });
+        }
+        
+        // Close search on overlay click
+        if (this.searchOverlay) {
+            this.searchOverlay.addEventListener('click', (e) => {
+                if (e.target === this.searchOverlay) {
+                    this.closeSearch();
+                }
+            });
+        }
+        
+        // Close search on ESC key
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && this.searchOverlay.style.display !== 'none') {
+                this.closeSearch();
+            }
+        });
+    }
+    
+    openSearch() {
+        this.searchOverlay.style.display = 'flex';
+        this.searchInput.focus();
+        document.body.style.overflow = 'hidden';
+    }
+    
+    closeSearch() {
+        this.searchOverlay.style.display = 'none';
+        this.searchInput.value = '';
+        this.searchResults.innerHTML = '';
+        document.body.style.overflow = '';
+    }
+    
+    performSearch() {
+        const query = this.searchInput.value.trim();
+        if (!query) return;
+        
+        // Simple search implementation
+        const results = this.searchContent(query);
+        this.displayResults(results);
+    }
+    
+    searchContent(query) {
+        const searchableContent = [
+            { title: 'About Us', content: 'Learn about our school mission, vision, and history', url: '#about' },
+            { title: 'Academics', content: 'Curriculum, departments, and academic programs', url: '#academics' },
+            { title: 'Admissions', content: 'Enrollment process and requirements', url: '#admissions' },
+            { title: 'Student Life', content: 'Clubs, activities, and student organizations', url: '#student-life' },
+            { title: 'News & Events', content: 'Latest announcements and upcoming events', url: '#news' },
+            { title: 'Contact', content: 'Get in touch with our school', url: '#contact' }
+        ];
+        
+        return searchableContent.filter(item => 
+            item.title.toLowerCase().includes(query.toLowerCase()) ||
+            item.content.toLowerCase().includes(query.toLowerCase())
+        );
+    }
+    
+    displayResults(results) {
+        if (results.length === 0) {
+            this.searchResults.innerHTML = '<p>No results found. Try different keywords.</p>';
+            return;
+        }
+        
+        this.searchResults.innerHTML = results.map(result => `
+            <div class="search-result-item" onclick="window.location.href='${result.url}'">
+                <h4>${result.title}</h4>
+                <p>${result.content}</p>
+            </div>
+        `).join('');
+    }
+}
+
 // Mobile menu functionality
 class MobileMenuManager {
     constructor() {
@@ -358,6 +524,7 @@ class MobileMenuManager {
     init() {
         this.createMobileToggle();
         this.handleResize();
+        this.handleMobileDropdowns();
     }
     
     createMobileToggle() {
@@ -380,14 +547,36 @@ class MobileMenuManager {
         });
     }
     
+    handleMobileDropdowns() {
+        const dropdownItems = document.querySelectorAll('.has-dropdown');
+        
+        dropdownItems.forEach(item => {
+            const link = item.querySelector('a');
+            const dropdown = item.querySelector('.dropdown');
+            
+            if (link && dropdown) {
+                link.addEventListener('click', (e) => {
+                    if (window.innerWidth <= 768) {
+                        e.preventDefault();
+                        dropdown.style.display = dropdown.style.display === 'block' ? 'none' : 'block';
+                    }
+                });
+            }
+        });
+    }
+    
     handleResize() {
         window.addEventListener('resize', () => {
             const nav = document.querySelector('nav');
             const toggle = document.querySelector('.mobile-menu-toggle');
+            const dropdowns = document.querySelectorAll('.dropdown');
             
             if (window.innerWidth > 768) {
                 if (nav) nav.classList.remove('mobile-open');
                 if (toggle) toggle.innerHTML = '☰';
+                dropdowns.forEach(dropdown => {
+                    dropdown.style.display = '';
+                });
             }
         });
     }
@@ -424,6 +613,13 @@ class PerformanceManager {
 document.addEventListener('DOMContentLoaded', function() {
     // Initialize language manager
     window.languageManager = new LanguageManager();
+    
+    // Initialize search functionality
+    new SearchManager();
+    
+    // Initialize academics functionality
+    new AcademicsTabManager();
+    new FAQManager();
     
     // Initialize mobile menu
     new MobileMenuManager();
