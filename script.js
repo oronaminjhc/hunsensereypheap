@@ -1,7 +1,7 @@
 // Language Toggle Functionality
 class LanguageManager {
     constructor() {
-        this.currentLanguage = 'en'; // Default to English
+        this.currentLanguage = null; // Start with null to ensure first load triggers update
         this.translations = {
             en: {
                 // Navigation
@@ -256,12 +256,21 @@ class LanguageManager {
     }
     
     updateSpecialElements() {
-        // Update title
-        const translations = this.translations[this.currentLanguage];
-        if (translations) {
-            document.title = this.currentLanguage === 'en' 
-                ? 'Hun Sen Serey Pheap High School'
-                : 'វិទ្យាល័យ ហ៊ុន សែន សិរីភាព';
+        const t = this.translations[this.currentLanguage];
+        if (!t) return;
+
+        // Update document title
+        document.title = this.currentLanguage === 'en'
+            ? 'Hun Sen Serey Pheap High School - Excellence in Education'
+            : 'វិទ្យាល័យ ហ៊ុន សែន សិរីភាព - ល្អឥតខ្ចោះក្នុងការអប់រំ';
+
+        // Update meta description
+        const metaDesc = document.querySelector('meta[name="description"]');
+        if (metaDesc) {
+            metaDesc.setAttribute('content',
+                this.currentLanguage === 'en'
+                    ? 'A safe, disciplined school in Takhmao offering strong academics, clubs, and Bac II preparation.'
+                    : 'សាលាសុវត្ថិភាព និងវិន័យ នៅតាខ្មៅ ជាមួយកម្មវិធីសិក្សាខ្លាំង ក្លឹប និងការរៀបចំសម្រាប់ Bac II.');
         }
     }
     

@@ -283,6 +283,16 @@ nav a:hover::after {
     to { opacity: 1; transform: translateX(0); }
 }
 
+.hero-img {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    display: block;
+    max-height: 400px;
+    object-fit: cover;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
 .hero-image-placeholder {
     background: linear-gradient(135deg, rgba(255,255,255,0.2) 0%, rgba(255,255,255,0.1) 100%);
     border-radius: 20px;
@@ -699,6 +709,49 @@ footer {
         flex-direction: column;
         align-items: center;
     }
+}
+
+/* Mobile Navigation Toggle */
+.mobile-menu-toggle {
+    display: none;
+    background: transparent;
+    border: 0;
+    font-size: 28px;
+    line-height: 1;
+    padding: 6px 10px;
+    cursor: pointer;
+    color: var(--dark-gray);
+}
+
+@media (max-width: 768px) {
+    .mobile-menu-toggle {
+        display: block;
+    }
+    
+    /* Hide navigation by default on mobile */
+    header nav {
+        display: none;
+    }
+    
+    /* Show navigation when mobile-open class is present */
+    header nav.mobile-open {
+        display: block;
+        width: 100%;
+        margin-top: 12px;
+    }
+    
+    header nav ul {
+        flex-direction: column;
+        gap: 12px;
+    }
+}
+
+/* Enhanced Skip Link Focus */
+.skip-link:focus,
+.skip-link:focus-visible {
+    top: 6px;
+    outline: 3px solid #fff;
+    box-shadow: 0 0 0 3px var(--cambodia-red);
 }
 
 /* Language transition effects */
