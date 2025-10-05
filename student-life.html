@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Student Life at Hun Sen Serey Pheap High School - Clubs, activities, student council, and campus life.">
+    <meta name="keywords" content="Student Life, Clubs, Activities, Hun Sen Serey Pheap, High School, Cambodia">
+    <meta name="author" content="Hun Sen Serey Pheap High School">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Student Life - Hun Sen Serey Pheap High School">
+    <meta property="og:description" content="Discover our vibrant student life, clubs, and activities">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://hunsensereypheap.vercel.app/student-life.html">
+    <meta property="og:image" content="https://hunsensereypheap.vercel.app/schoollogo-removebg-preview.png">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Student Life - Hun Sen Serey Pheap High School">
+    <meta name="twitter:description" content="Discover our vibrant student life, clubs, and activities">
+    <meta name="twitter:image" content="https://hunsensereypheap.vercel.app/schoollogo-removebg-preview.png">
+    
+    <title>Student Life - Hun Sen Serey Pheap High School</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preload" href="schoollogo-removebg-preview.png" as="image">
+    <link rel="icon" type="image/png" href="schoollogo-removebg-preview.png">
+</head>
+<body>
+    <!-- Skip to main content for accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="top-bar-content">
+            <div class="contact-info">
+                <span data-en="📞 +855 23 XXX XXX" data-km="📞 +855 23 XXX XXX">📞 +855 23 XXX XXX</span>
+                <span data-en="📧 info@hssphighschool.edu.kh" data-km="📧 info@hssphighschool.edu.kh">📧 info@hssphighschool.edu.kh</span>
+                <span data-en="📍 Takhmao, Kandal Province" data-km="📍 ត្រពាំងព្រីង ខេត្តកណ្តាល">📍 Takhmao, Kandal Province</span>
+            </div>
+            <div class="top-utils">
+                <div class="search-toggle">
+                    <button id="search-btn" aria-label="Search" title="Search">
+                        <span>🔍</span>
+                    </button>
+                </div>
+            <div class="language-switch">
+                <button id="en-btn" class="active" data-en="English" data-km="English" aria-label="Switch to English">English</button>
+                <button id="km-btn" data-en="ភាសាខ្មែរ" data-km="ភាសាខ្មែរ" aria-label="Switch to Khmer">ភាសាខ្មែរ</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Header -->
+    <header>
+        <div class="header-content">
+            <div class="logo-section">
+                <div class="logo">
+                    <img src="schoollogo-removebg-preview.png" alt="Hun Sen Serey Pheap High School Logo" class="logo-image" loading="eager">
+                </div>
+                <div class="school-name">
+                    <h1 data-en="Hun Sen Serey Pheap High School" data-km="វិទ្យាល័យ ហ៊ុន សែន សិរីភាព">Hun Sen Serey Pheap High School</h1>
+                    <div class="khmer" data-en="Excellence in Education" data-km="វិទ្យាល័យ ហ៊ុន សែន សិរីភាព">Excellence in Education</div>
+                </div>
+            </div>
+            <nav>
+                <ul class="main-nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="academics.html">Academics</a></li>
+                    <li><a href="admissions.html">Admissions</a></li>
+                    <li><a href="student-life.html" class="active">Student Life</a></li>
+                    <li><a href="news.html">News & Events</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <!-- Search Overlay -->
+    <div id="search-overlay" class="search-overlay" style="display: none;">
+        <div class="search-content">
+            <div class="search-header">
+                <h3 data-en="Search" data-km="ស្វែងរក">Search</h3>
+                <button id="search-close" aria-label="Close search">✕</button>
+            </div>
+            <div class="search-input-container">
+                <input type="text" id="search-input" placeholder="Search news, pages, and information..." aria-label="Search input">
+                <button id="search-submit" aria-label="Submit search">🔍</button>
+            </div>
+            <div id="search-results" class="search-results"></div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <main id="main-content">
+        <!-- Student Life Section -->
+        <section id="student-life" class="student-life">
+            <div class="container">
+                <!-- Clubs & Activities -->
+                <div id="student-clubs" class="student-life-subsection">
+                    <div class="section-header">
+                        <h1 data-en="Student Life" data-km="ជីវភាពសិស្ស">Student Life</h1>
+                        <p data-en="Discover opportunities for growth, friendship, and fun" data-km="ស្វែងរកឱកាសសម្រាប់ការលូតលាស់ មិត្តភាព និងការកម្សាន្ត">Discover opportunities for growth, friendship, and fun</p>
+                    </div>
+                    <div class="clubs-grid">
+                        <div class="club-card">
+                            <div class="club-icon">🎨</div>
+                            <h4 data-en="Art Club" data-km="ក្លឹបសិល្បៈ">Art Club</h4>
+                            <p data-en="Express creativity through various art forms" data-km="បង្ហាញការច្នៃប្រឌិតតាមរយៈសិល្បៈផ្សេងៗ">Express creativity through various art forms</p>
+                            <a href="contact.html" class="club-link" data-en="Join Club" data-km="ចូលរួមក្លឹប">Join Club</a>
+                        </div>
+                        <div class="club-card">
+                            <div class="club-icon">🎵</div>
+                            <h4 data-en="Music Club" data-km="ក្លឹបតន្ត្រី">Music Club</h4>
+                            <p data-en="Learn instruments and perform together" data-km="រៀនឧបករណ៍តន្ត្រី និងសម្តែងជាមួយគ្នា">Learn instruments and perform together</p>
+                            <a href="contact.html" class="club-link" data-en="Join Club" data-km="ចូលរួមក្លឹប">Join Club</a>
+                        </div>
+                        <div class="club-card">
+                            <div class="club-icon">⚽</div>
+                            <h4 data-en="Sports Club" data-km="ក្លឹបកីឡា">Sports Club</h4>
+                            <p data-en="Stay active and compete in various sports" data-km="រក្សាសុខភាព និងប្រកួតកីឡាផ្សេងៗ">Stay active and compete in various sports</p>
+                            <a href="contact.html" class="club-link" data-en="Join Club" data-km="ចូលរួមក្លឹប">Join Club</a>
+                        </div>
+                        <div class="club-card">
+                            <div class="club-icon">📚</div>
+                            <h4 data-en="Debate Club" data-km="ក្លឹបជជែក">Debate Club</h4>
+                            <p data-en="Develop critical thinking and public speaking" data-km="អភិវឌ្ឍការគិតវិជ្ជមាន និងការនិយាយសាធារណៈ">Develop critical thinking and public speaking</p>
+                            <a href="contact.html" class="club-link" data-en="Join Club" data-km="ចូលរួមក្លឹប">Join Club</a>
+                        </div>
+                        <div class="club-card">
+                            <div class="club-icon">💻</div>
+                            <h4 data-en="Tech Club" data-km="ក្លឹបបច្ចេកវិទ្យា">Tech Club</h4>
+                            <p data-en="Explore programming and digital innovation" data-km="ស្វែងយល់ការសរសេរកម្មវិធី និងនវានុវត្តន៍ឌីជីថល">Explore programming and digital innovation</p>
+                            <a href="contact.html" class="club-link" data-en="Join Club" data-km="ចូលរួមក្លឹប">Join Club</a>
+                        </div>
+                        <div class="club-card">
+                            <div class="club-icon">🌱</div>
+                            <h4 data-en="Environmental Club" data-km="ក្លឹបបរិស្ថាន">Environmental Club</h4>
+                            <p data-en="Protect the environment and promote sustainability" data-km="ការពារបរិស្ថាន និងលើកកម្ពស់និរន្តរភាព">Protect the environment and promote sustainability</p>
+                            <a href="contact.html" class="club-link" data-en="Join Club" data-km="ចូលរួមក្លឹប">Join Club</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Events & Activities -->
+                <div id="student-events" class="student-life-subsection">
+                    <div class="section-header">
+                        <h2 data-en="Events & Activities" data-km="ព្រឹត្តិការណ៍ និងសកម្មភាព">Events & Activities</h2>
+                    </div>
+                    <div class="events-timeline">
+                        <div class="event-item">
+                            <div class="event-date">
+                                <span class="month" data-en="Sep" data-km="កញ្ញា">Sep</span>
+                                <span class="day">15</span>
+                            </div>
+                            <div class="event-content">
+                                <h4 data-en="Welcome Week" data-km="សប្តាហ៍ស្វាគមន៍">Welcome Week</h4>
+                                <p data-en="Orientation activities for new students" data-km="សកម្មភាពណែនាំសម្រាប់សិស្សថ្មី">Orientation activities for new students</p>
+                            </div>
+                        </div>
+                        <div class="event-item">
+                            <div class="event-date">
+                                <span class="month" data-en="Oct" data-km="តុលា">Oct</span>
+                                <span class="day">20</span>
+                            </div>
+                            <div class="event-content">
+                                <h4 data-en="Sports Day" data-km="ថ្ងៃកីឡា">Sports Day</h4>
+                                <p data-en="Annual sports competition and fun activities" data-km="ការប្រកួតកីឡាប្រចាំឆ្នាំ និងសកម្មភាពកម្សាន្ត">Annual sports competition and fun activities</p>
+                            </div>
+                        </div>
+                        <div class="event-item">
+                            <div class="event-date">
+                                <span class="month" data-en="Nov" data-km="វិច្ឆិកា">Nov</span>
+                                <span class="day">10</span>
+                            </div>
+                            <div class="event-content">
+                                <h4 data-en="Cultural Festival" data-km="ពិធីបុណ្យវប្បធម៌">Cultural Festival</h4>
+                                <p data-en="Celebrate Khmer culture and traditions" data-km="អបអរវប្បធម៌ និងប្រពៃណីខ្មែរ">Celebrate Khmer culture and traditions</p>
+                            </div>
+                        </div>
+                        <div class="event-item">
+                            <div class="event-date">
+                                <span class="month" data-en="Dec" data-km="ធ្នូ">Dec</span>
+                                <span class="day">25</span>
+                            </div>
+                            <div class="event-content">
+                                <h4 data-en="Winter Concert" data-km="ការប្រគំតន្ត្រីរដូវរងារ">Winter Concert</h4>
+                                <p data-en="Student performances and holiday celebration" data-km="ការសម្តែងរបស់សិស្ស និងអបអរពិធីបុណ្យ">Student performances and holiday celebration</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Student Support -->
+                <div id="student-support" class="student-life-subsection">
+                    <div class="section-header">
+                        <h2 data-en="Student Support" data-km="ការគាំទ្រសិស្ស">Student Support</h2>
+                    </div>
+                    <div class="support-grid">
+                        <div class="support-card">
+                            <div class="support-icon">👥</div>
+                            <h4 data-en="Peer Mentoring" data-km="ការណែនាំដោយមិត្តភក្តិ">Peer Mentoring</h4>
+                            <p data-en="Upperclassmen guide new students" data-km="សិស្សចាស់ណែនាំសិស្សថ្មី">Upperclassmen guide new students</p>
+                        </div>
+                        <div class="support-card">
+                            <div class="support-icon">💬</div>
+                            <h4 data-en="Counseling Services" data-km="សេវាកម្មប្រឹក្សាយោបល់">Counseling Services</h4>
+                            <p data-en="Professional support for personal and academic issues" data-km="ការគាំទ្រវិជ្ជាជីវៈសម្រាប់បញ្ហាផ្ទាល់ខ្លួន និងសិក្សា">Professional support for personal and academic issues</p>
+                        </div>
+                        <div class="support-card">
+                            <div class="support-icon">📖</div>
+                            <h4 data-en="Study Groups" data-km="ក្រុមសិក្សា">Study Groups</h4>
+                            <p data-en="Collaborative learning and exam preparation" data-km="ការសិក្សារួមគ្នា និងរៀបចំប្រឡង">Collaborative learning and exam preparation</p>
+                        </div>
+                        <div class="support-card">
+                            <div class="support-icon">🏆</div>
+                            <h4 data-en="Achievement Recognition" data-km="ការទទួលស្គាល់សមិទ្ធិផល">Achievement Recognition</h4>
+                            <p data-en="Celebrate student accomplishments and milestones" data-km="អបអរសមិទ្ធិផល និងគោលដៅសិស្ស">Celebrate student accomplishments and milestones</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-main">
+                <div class="footer-logo">
+                    <img src="schoollogo-removebg-preview.png" alt="Hun Sen Serey Pheap High School" width="60" height="60">
+                    <div class="footer-school-info">
+                        <h3 data-en="Hun Sen Serey Pheap High School" data-km="វិទ្យាល័យ ហ៊ុន សែន សិរីភាព">Hun Sen Serey Pheap High School</h3>
+                        <p data-en="Learning today leading tomorrow" data-km="រៀនថ្ងៃនេះ ដឹកនាំថ្ងៃស្អែក">Learning today leading tomorrow</p>
+                    </div>
+                </div>
+                <div class="footer-contact">
+                    <div class="contact-item">
+                        <span class="contact-icon">📞</span>
+                        <span>+855 23 XXX XXX</span>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-icon">📧</span>
+                        <span>info@hssphighschool.edu.kh</span>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-icon">📍</span>
+                        <span data-en="Takhmao, Kandal Province" data-km="តាខ្មៅ ខេត្តកណ្តាល">Takhmao, Kandal Province</span>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-links">
+                <div class="footer-section">
+                    <h4 data-en="Quick Links" data-km="តំណភ្ជាប់រហ័ស">Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html" data-en="About" data-km="អំពីយើង">About</a></li>
+                        <li><a href="academics.html" data-en="Academics" data-km="សិក្សា">Academics</a></li>
+                        <li><a href="admissions.html" data-en="Admissions" data-km="ចុះឈ្មោះ">Admissions</a></li>
+                        <li><a href="contact.html" data-en="Contact" data-km="ទំនាក់ទំនង">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 data-en="Follow Us" data-km="តាមដានយើង">Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-link">📘 Facebook</a>
+                        <a href="#" class="social-link">📺 YouTube</a>
+                        <a href="#" class="social-link">📷 Instagram</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p data-en="&copy; 2025 Hun Sen Serey Pheap High School. All rights reserved." data-km="&copy; ២០២៥ វិទ្យាល័យ ហ៊ុន សែន សិរីភាព។ រក្សាសិទ្ធិគ្រប់យ្យាង។">&copy; 2025 Hun Sen Serey Pheap High School. All rights reserved.</p>
+        </div>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>

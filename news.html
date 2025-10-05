@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="News & Events at Hun Sen Serey Pheap High School - Latest announcements, event calendar, and photo gallery.">
+    <meta name="keywords" content="News, Events, Announcements, Hun Sen Serey Pheap, High School, Cambodia">
+    <meta name="author" content="Hun Sen Serey Pheap High School">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="News & Events - Hun Sen Serey Pheap High School">
+    <meta property="og:description" content="Stay updated with our latest news and upcoming events">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://hunsensereypheap.vercel.app/news.html">
+    <meta property="og:image" content="https://hunsensereypheap.vercel.app/schoollogo-removebg-preview.png">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="News & Events - Hun Sen Serey Pheap High School">
+    <meta name="twitter:description" content="Stay updated with our latest news and upcoming events">
+    <meta name="twitter:image" content="https://hunsensereypheap.vercel.app/schoollogo-removebg-preview.png">
+    
+    <title>News & Events - Hun Sen Serey Pheap High School</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preload" href="schoollogo-removebg-preview.png" as="image">
+    <link rel="icon" type="image/png" href="schoollogo-removebg-preview.png">
+</head>
+<body>
+    <!-- Skip to main content for accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="top-bar-content">
+            <div class="contact-info">
+                <span data-en="📞 +855 23 XXX XXX" data-km="📞 +855 23 XXX XXX">📞 +855 23 XXX XXX</span>
+                <span data-en="📧 info@hssphighschool.edu.kh" data-km="📧 info@hssphighschool.edu.kh">📧 info@hssphighschool.edu.kh</span>
+                <span data-en="📍 Takhmao, Kandal Province" data-km="📍 ត្រពាំងព្រីង ខេត្តកណ្តាល">📍 Takhmao, Kandal Province</span>
+            </div>
+            <div class="top-utils">
+                <div class="search-toggle">
+                    <button id="search-btn" aria-label="Search" title="Search">
+                        <span>🔍</span>
+                    </button>
+                </div>
+            <div class="language-switch">
+                <button id="en-btn" class="active" data-en="English" data-km="English" aria-label="Switch to English">English</button>
+                <button id="km-btn" data-en="ភាសាខ្មែរ" data-km="ភាសាខ្មែរ" aria-label="Switch to Khmer">ភាសាខ្មែរ</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Header -->
+    <header>
+        <div class="header-content">
+            <div class="logo-section">
+                <div class="logo">
+                    <img src="schoollogo-removebg-preview.png" alt="Hun Sen Serey Pheap High School Logo" class="logo-image" loading="eager">
+                </div>
+                <div class="school-name">
+                    <h1 data-en="Hun Sen Serey Pheap High School" data-km="វិទ្យាល័យ ហ៊ុន សែន សិរីភាព">Hun Sen Serey Pheap High School</h1>
+                    <div class="khmer" data-en="Excellence in Education" data-km="វិទ្យាល័យ ហ៊ុន សែន សិរីភាព">Excellence in Education</div>
+                </div>
+            </div>
+            <nav>
+                <ul class="main-nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="academics.html">Academics</a></li>
+                    <li><a href="admissions.html">Admissions</a></li>
+                    <li><a href="student-life.html">Student Life</a></li>
+                    <li><a href="news.html" class="active">News & Events</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <!-- Search Overlay -->
+    <div id="search-overlay" class="search-overlay" style="display: none;">
+        <div class="search-content">
+            <div class="search-header">
+                <h3 data-en="Search" data-km="ស្វែងរក">Search</h3>
+                <button id="search-close" aria-label="Close search">✕</button>
+            </div>
+            <div class="search-input-container">
+                <input type="text" id="search-input" placeholder="Search news, pages, and information..." aria-label="Search input">
+                <button id="search-submit" aria-label="Submit search">🔍</button>
+            </div>
+            <div id="search-results" class="search-results"></div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <main id="main-content">
+        <!-- News Section -->
+        <section id="news" class="news">
+            <div class="container">
+                <h1 data-en="News & Events" data-km="ព័ត៌មាន និងព្រឹត្តិការណ៍">News & Events</h1>
+                
+                <!-- Latest News -->
+                <div id="news-latest" class="news-subsection">
+                    <h2 data-en="Latest News" data-km="ព័ត៌មានថ្មីៗ">Latest News</h2>
+                    <div class="news-grid">
+                        <article class="news-card">
+                            <div class="news-image">
+                                <span class="news-date">2025.09.30</span>
+                            </div>
+                            <div class="news-content">
+                                <h3 data-en="2025-2026 Academic Year Opening Ceremony" data-km="ពិធីបើកឆ្នាំសិក្សា ២០២៥-២០២៦">2025-2026 Academic Year Opening Ceremony</h3>
+                                <p data-en="The opening ceremony for the new academic year was held successfully with the participation of students, teachers, and parents." data-km="ពិធីបើកឆ្នាំសិក្សាថ្មីត្រូវបានរៀបចំដោយជោគជ័យដោយមានការចូលរួមពីសិស្ស គ្រូបង្រៀន និងឪពុកម្តាយ។">The opening ceremony for the new academic year was held successfully with the participation of students, teachers, and parents.</p>
+                                <a href="#" class="read-more" data-en="Read More →" data-km="អានបន្ថែម →">Read More →</a>
+                            </div>
+                        </article>
+                        <article class="news-card">
+                            <div class="news-image">
+                                <span class="news-date">2025.09.24</span>
+                            </div>
+                            <div class="news-content">
+                                <h3 data-en="2025 Science Competition Victory" data-km="ជ័យជំនះការប្រកួតវិទ្យាសាស្ត្រ ២០២៥">2025 Science Competition Victory</h3>
+                                <p data-en="Our school students achieved excellent results in the national high school science competition, bringing honor to our school." data-km="សិស្សរបស់យើងបានសម្រេចលទ្ធផលល្អប្រសើរក្នុងការប្រកួតវិទ្យាសាស្ត្រវិទ្យាល័យថ្នាក់ជាតិ ធ្វើអោយសាលាមានកិត្តិយស។">Our school students achieved excellent results in the national high school science competition, bringing honor to our school.</p>
+                                <a href="#" class="read-more" data-en="Read More →" data-km="អានបន្ថែម →">Read More →</a>
+                            </div>
+                        </article>
+                        <article class="news-card">
+                            <div class="news-image">
+                                <span class="news-date">2025.09.20</span>
+                            </div>
+                            <div class="news-content">
+                                <h3 data-en="International Exchange Program Notice" data-km="ដំណឹងកម្មវិធីដោះដូរអន្តរជាតិ">International Exchange Program Notice</h3>
+                                <p data-en="Recruiting participants for educational exchange programs with ASEAN countries. An opportunity to develop global leadership and cultural understanding." data-km="ជ្រើសរើសសមាជិកចូលរួមកម្មវិធីដោះដូរអប់រំជាមួយប្រទេសអាស៊ាន។ ឱកាសដើម្បីអភិវឌ្ឍភាពជាអ្នកដឹកនាំសកលលោក និងការយល់ដឹងវប្បធម៌។">Recruiting participants for educational exchange programs with ASEAN countries. An opportunity to develop global leadership and cultural understanding.</p>
+                                <a href="#" class="read-more" data-en="Read More →" data-km="អានបន្ថែម →">Read More →</a>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                
+                <!-- Upcoming Events -->
+                <div id="news-events" class="news-subsection">
+                    <h2 data-en="Upcoming Events" data-km="ព្រឹត្តិការណ៍ខាងមុខ">Upcoming Events</h2>
+                    <div class="events-list">
+                        <div class="event-item">
+                            <div class="event-date">
+                                <span class="month" data-en="Oct" data-km="តុលា">Oct</span>
+                                <span class="day">15</span>
+                            </div>
+                            <div class="event-content">
+                                <h4 data-en="Parent-Teacher Conference" data-km="ការប្រជុំឪពុកម្តាយ-គ្រូបង្រៀន">Parent-Teacher Conference</h4>
+                                <p data-en="Discuss student progress and academic goals" data-km="ពិភាក្សាវឌ្ឍនភាពសិស្ស និងគោលដៅសិក្សា">Discuss student progress and academic goals</p>
+                            </div>
+                        </div>
+                        <div class="event-item">
+                            <div class="event-date">
+                                <span class="month" data-en="Nov" data-km="វិច្ឆិកា">Nov</span>
+                                <span class="day">20</span>
+                            </div>
+                            <div class="event-content">
+                                <h4 data-en="Science Fair" data-km="ពិព័រណ៍វិទ្យាសាស្ត្រ">Science Fair</h4>
+                                <p data-en="Student projects and scientific demonstrations" data-km="គម្រោងសិស្ស និងការបង្ហាញវិទ្យាសាស្ត្រ">Student projects and scientific demonstrations</p>
+                            </div>
+                        </div>
+                        <div class="event-item">
+                            <div class="event-date">
+                                <span class="month" data-en="Dec" data-km="ធ្នូ">Dec</span>
+                                <span class="day">25</span>
+                            </div>
+                            <div class="event-content">
+                                <h4 data-en="Winter Concert" data-km="ការប្រគំតន្ត្រីរដូវរងារ">Winter Concert</h4>
+                                <p data-en="Student performances and holiday celebration" data-km="ការសម្តែងរបស់សិស្ស និងអបអរពិធីបុណ្យ">Student performances and holiday celebration</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-main">
+                <div class="footer-logo">
+                    <img src="schoollogo-removebg-preview.png" alt="Hun Sen Serey Pheap High School" width="60" height="60">
+                    <div class="footer-school-info">
+                        <h3 data-en="Hun Sen Serey Pheap High School" data-km="វិទ្យាល័យ ហ៊ុន សែន សិរីភាព">Hun Sen Serey Pheap High School</h3>
+                        <p data-en="Learning today leading tomorrow" data-km="រៀនថ្ងៃនេះ ដឹកនាំថ្ងៃស្អែក">Learning today leading tomorrow</p>
+                    </div>
+                </div>
+                <div class="footer-contact">
+                    <div class="contact-item">
+                        <span class="contact-icon">📞</span>
+                        <span>+855 23 XXX XXX</span>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-icon">📧</span>
+                        <span>info@hssphighschool.edu.kh</span>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-icon">📍</span>
+                        <span data-en="Takhmao, Kandal Province" data-km="តាខ្មៅ ខេត្តកណ្តាល">Takhmao, Kandal Province</span>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-links">
+                <div class="footer-section">
+                    <h4 data-en="Quick Links" data-km="តំណភ្ជាប់រហ័ស">Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html" data-en="About" data-km="អំពីយើង">About</a></li>
+                        <li><a href="academics.html" data-en="Academics" data-km="សិក្សា">Academics</a></li>
+                        <li><a href="admissions.html" data-en="Admissions" data-km="ចុះឈ្មោះ">Admissions</a></li>
+                        <li><a href="contact.html" data-en="Contact" data-km="ទំនាក់ទំនង">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 data-en="Follow Us" data-km="តាមដានយើង">Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-link">📘 Facebook</a>
+                        <a href="#" class="social-link">📺 YouTube</a>
+                        <a href="#" class="social-link">📷 Instagram</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p data-en="&copy; 2025 Hun Sen Serey Pheap High School. All rights reserved." data-km="&copy; ២០២៥ វិទ្យាល័យ ហ៊ុន សែន សិរីភាព។ រក្សាសិទ្ធិគ្រប់យ្យាង។">&copy; 2025 Hun Sen Serey Pheap High School. All rights reserved.</p>
+        </div>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
