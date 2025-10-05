@@ -16,7 +16,7 @@ class LanguageManager {
                 
                 // Hero section
                 'hero-title': 'Learning today leading tomorrow',
-                'hero-subtitle': 'Cultivating Excellence, Creativity, and Global Leadership at Hun Sen Serey Pheap High School',
+                'hero-subtitle': 'We provide quality education, strong values, and real-world skills so students thrive at university, in work, and in life.',
                 'admission-inquiry': 'Admission Inquiry',
                 'virtual-tour': 'Virtual Tour',
                 'school-campus-image': 'School Campus Image',
@@ -104,7 +104,7 @@ class LanguageManager {
                 
                 // Hero section
                 'hero-title': 'រៀនថ្ងៃនេះ ដឹកនាំថ្ងៃស្អែក',
-                'hero-subtitle': 'ការបណ្តុះបណ្តាលឧត្តមភាព ភាពច្នៃប្រឌិត និងភាពជាអ្នកដឹកនាំសកលលោក នៅវិទ្យាល័យ ហ៊ុន សែន សិរីភាព',
+                'hero-subtitle': 'យើងផ្តល់នូវការអប់រំគុណភាព តម្លៃរឹងមាំ និងជំនាញក្នុងជីវិតពិតប្រាកដ ដើម្បីឱ្យសិស្សរីកចម្រើននៅសាកលវិទ្យាល័យ ការងារ និងជីវិត។',
                 'admission-inquiry': 'សំណួរចុះឈ្មោះ',
                 'virtual-tour': 'ទស្សនកិច្ចនិម្មិត',
                 'school-campus-image': 'រូបភាពបរិវេណសាលា',
