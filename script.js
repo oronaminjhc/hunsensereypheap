@@ -13,7 +13,7 @@ class LanguageManager {
                 'contact': 'Contact',
                 
                 // Hero section
-                'hero-title': 'Center of Education for the Future',
+                'hero-title': 'Learning today leading tomorrow',
                 'hero-subtitle': 'Cultivating Excellence, Creativity, and Global Leadership at Hun Sen Serey Pheap High School',
                 'admission-inquiry': 'Admission Inquiry',
                 'virtual-tour': 'Virtual Tour',
@@ -99,7 +99,7 @@ class LanguageManager {
                 'contact': 'ទំនាក់ទំនង',
                 
                 // Hero section
-                'hero-title': 'មជ្ឈមណ្ឌលអប់រំសម្រាប់អនាគត',
+                'hero-title': 'រៀនថ្ងៃនេះ ដឹកនាំថ្ងៃស្អែក',
                 'hero-subtitle': 'ការបណ្តុះបណ្តាលឧត្តមភាព ភាពច្នៃប្រឌិត និងភាពជាអ្នកដឹកនាំសកលលោក នៅវិទ្យាល័យ ហ៊ុន សែន សិរីភាព',
                 'admission-inquiry': 'សំណួរចុះឈ្មោះ',
                 'virtual-tour': 'ទស្សនកិច្ចនិម្មិត',
